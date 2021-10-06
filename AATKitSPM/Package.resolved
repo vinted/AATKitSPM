@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "GoogleAppMeasurement",
+        "repositoryURL": "https://github.com/google/GoogleAppMeasurement.git",
+        "state": {
+          "branch": null,
+          "revision": "06add56b27b88ae5180e92d4ee21a1199ee888a1",
+          "version": "8.8.0"
+        }
+      },
+      {
+        "package": "GoogleUtilities",
+        "repositoryURL": "https://github.com/google/GoogleUtilities.git",
+        "state": {
+          "branch": null,
+          "revision": "616fac2626b6b2d1424d79a6f786b4e2ed1cfb49",
+          "version": "7.5.2"
+        }
+      },
+      {
+        "package": "AppNexusSDK",
+        "repositoryURL": "https://github.com/appnexus/mobile-sdk-ios",
+        "state": {
+          "branch": null,
+          "revision": "3c53ee239971e7944b5094e1fd755b8df1177724",
+          "version": "7.16.0"
+        }
+      },
+      {
+        "package": "nanopb",
+        "repositoryURL": "https://github.com/firebase/nanopb.git",
+        "state": {
+          "branch": null,
+          "revision": "7ee9ef9f627d85cbe1b8c4f49a3ed26eed216c77",
+          "version": "2.30908.0"
+        }
+      },
+      {
+        "package": "Promises",
+        "repositoryURL": "https://github.com/google/promises.git",
+        "state": {
+          "branch": null,
+          "revision": "611337c330350c9c1823ad6d671e7f936af5ee13",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "TeadsSDK",
+        "repositoryURL": "https://github.com/teads/TeadsSDK-iOS",
+        "state": {
+          "branch": null,
+          "revision": "846800dff21103029f3f48fcdb1a9cb03a7c35d0",
+          "version": "4.8.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

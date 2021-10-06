@@ -1,0 +1,11 @@
+framework module VisxSDK {
+  umbrella header "VisxSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module VisxSDK.Swift {
+    header "VisxSDK-Swift.h"
+    requires objc
+}
