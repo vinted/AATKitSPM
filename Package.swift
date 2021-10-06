@@ -12,6 +12,10 @@ let package = Package(
             name: "AATKitSPM",
             targets: ["AATKitSPM"]
         ),
+        .library(
+            name: "AATKitSPM-M1",
+            targets: ["AATKitSPM-M1"]
+        )
     ],
     dependencies: [
         // AdNetworks supporting SPM
@@ -29,13 +33,30 @@ let package = Package(
                     "GoogleMobileAds", "GoogleCMP", "AATDependencyHelper", "Unity",
                     .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
                 ],
-                path: "./Sources",
+                path: "./Sources/AATKitSPM",
                 resources: [
-                    .process("../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
+                    .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
                 ]
-        ),
+               ),
+        
+        .target(name: "AATKitSPM-M1",
+                dependencies: [
+                    "AATKitFramework-M1", "DTBiOSSDK", "OguryCMP", "AppLovin",
+                    "OMSDK_Smaato","SmaatoSDKBanner", "SmaatoSDKCore", "SmaatoSDKInterstitial", "SmaatoSDKNative", "SmaatoSDKOpenMeasurement", "SmaatoSDKOutstream", "SmaatoSDKRewardedAds", "SmaatoSDKRichMedia", "SmaatoSDKVideo",
+                    "SASDisplayKit","SCSCoreKit","AATAdColonyAdapter","AdColony", "VisxSDK", "InMobiSDK",
+                    "AppNexusSDK", "TeadsSDK", "MoPubSDK", "OMSDK_Mopub", "Pubnative",
+                    "GoogleMobileAds", "GoogleCMP", "AATDependencyHelper",
+                    .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
+                ],
+                path: "./Sources/AATKitSPM-M1",
+                resources: [
+                    .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
+                ]
+               ),
+        
         .binaryTarget(name: "AATKitFramework", path: "./Dependencies/AATKit/AATKit.xcframework"),
-
+        .binaryTarget(name: "AATKitFramework-M1", path: "./Dependencies/AATKit-M1/AATKit.xcframework"),
+        
         // Google
         .binaryTarget(name: "GoogleMobileAds", path: "./Dependencies/Google/GoogleMobileAds.xcframework"),
         .binaryTarget(name: "GoogleCMP", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
