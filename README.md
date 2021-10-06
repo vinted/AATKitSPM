@@ -1,6 +1,6 @@
 # AATKitSPM
 
-A swift package manager that wraps AATKit and AdNetworks (Only AdNetworks with xcframework format are considerd)
+A swift package manager that wraps AATKit and AdNetworks (Only AdNetworks with xcframework format are considered)
 
 ## Steps
 
