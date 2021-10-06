@@ -36,6 +36,10 @@ let package = Package(
                 path: "./Sources/AATKitSPM",
                 resources: [
                     .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
+                ],
+                cSettings: [
+                    .define("Other Linker Flags", to: "-ObjC", .when(platforms: [.iOS], configuration: .debug)),
+                    .define("Other Linker Flags", to: "-ObjC", .when(platforms: [.iOS], configuration: .release))
                 ]
                ),
         
