@@ -54,9 +54,8 @@ let package = Package(
                 ]
                ),
         
-        
         .binaryTarget(name: "AATKitFramework", path: "./Dependencies/AATKit/AATKit.xcframework"),
-        .binaryTarget(name: "AATKitFramework-M1", path: "./Dependencies/AATKit-M1/AATKit-M1.xcframework"),
+        .binaryTarget(name: "AATKitFramework-M1", path: "./Dependencies/AATKit-M1/AATKit.xcframework"),
         
         // Google
         .binaryTarget(name: "GoogleMobileAds", path: "./Dependencies/Google/GoogleMobileAds.xcframework"),
