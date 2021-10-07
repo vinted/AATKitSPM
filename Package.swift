@@ -20,7 +20,6 @@ let package = Package(
     dependencies: [
         // AdNetworks supporting SPM
         .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.16.0")),
-        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("4.8.7")),
         .package(name: "GoogleAppMeasurement", url: "https://github.com/google/GoogleAppMeasurement.git", .exact("8.8.0")),
     ],
     targets: [
@@ -29,7 +28,7 @@ let package = Package(
                     "AATKitFramework", "DTBiOSSDK", "OguryCMP", "AppLovin",
                     "OMSDK_Smaato","SmaatoSDKBanner", "SmaatoSDKCore", "SmaatoSDKInterstitial", "SmaatoSDKNative", "SmaatoSDKOpenMeasurement", "SmaatoSDKOutstream", "SmaatoSDKRewardedAds", "SmaatoSDKRichMedia", "SmaatoSDKVideo",
                     "SASDisplayKit","SCSCoreKit","AATAdColonyAdapter","AdColony", "VisxSDK", "InMobiSDK",
-                    "AppNexusSDK", "TeadsSDK", "MoPubSDK", "OMSDK_Mopub", "Pubnative",
+                    "AppNexusSDK", "MoPubSDK", "OMSDK_Mopub", "Pubnative",
                     "GoogleMobileAds", "GoogleCMP", "AATDependencyHelper", "Unity",
                     .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
                 ],
@@ -44,7 +43,7 @@ let package = Package(
                     "AATKitFramework-M1", "DTBiOSSDK", "OguryCMP", "AppLovin",
                     "OMSDK_Smaato","SmaatoSDKBanner", "SmaatoSDKCore", "SmaatoSDKInterstitial", "SmaatoSDKNative", "SmaatoSDKOpenMeasurement", "SmaatoSDKOutstream", "SmaatoSDKRewardedAds", "SmaatoSDKRichMedia", "SmaatoSDKVideo",
                     "SASDisplayKit","SCSCoreKit","AATAdColonyAdapter","AdColony", "VisxSDK", "InMobiSDK",
-                    "AppNexusSDK", "TeadsSDK", "MoPubSDK", "OMSDK_Mopub", "Pubnative",
+                    "AppNexusSDK", "MoPubSDK", "OMSDK_Mopub", "Pubnative",
                     "GoogleMobileAds", "GoogleCMP", "AATDependencyHelper",
                     .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
                 ],

@@ -45,15 +45,6 @@
           "revision": "611337c330350c9c1823ad6d671e7f936af5ee13",
           "version": "2.0.0"
         }
-      },
-      {
-        "package": "TeadsSDK",
-        "repositoryURL": "https://github.com/teads/TeadsSDK-iOS",
-        "state": {
-          "branch": null,
-          "revision": "846800dff21103029f3f48fcdb1a9cb03a7c35d0",
-          "version": "4.8.7"
-        }
       }
     ]
   },
