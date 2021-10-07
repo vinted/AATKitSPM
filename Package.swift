@@ -69,10 +69,9 @@ let package = Package(
         .target(name:"AATKit-Core",
                 dependencies: ["AATKitFramework"],
                 path: "./Sources/AATKit"),
-        
-            .target(name:"AATKit-M1-Core",
-                    dependencies: ["AATKitFramework-M1"],
-                    path: "./Sources/AATKit-M1"),
+        .target(name:"AATKit-M1-Core",
+                dependencies: ["AATKitFramework-M1"],
+                path: "./Sources/AATKit-M1"),
         
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
@@ -81,71 +80,58 @@ let package = Package(
                                 .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
-        
-            .target(name: "AATKit-AppLovin",
-                    dependencies: ["AppLovin"],
-                    path: "./Sources/AppLovinSources",
-                    resources: [
-                        .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
-                    ]
-                   ),
-        
-            .target(name:"AATKit-Amazon",
-                    dependencies: ["DTBiOSSDK"],
-                    path: "./Sources/AmazonSources"),
-        
-            .target(name:"AATKit-OguryCMP",
-                    dependencies: ["OguryCMP"],
-                    path: "./Sources/OguryCMPSources"),
-
-            .target(name:"AATKit-GoogleCMP",
-                    dependencies: ["GoogleCMP"],
-                    path: "./Sources/GoogleCMPSources"),
-        
-            .target(name:"AATKit-Smaato",
-                    dependencies: ["OMSDK_Smaato",
-                                   "SmaatoSDKBanner",
-                                   "SmaatoSDKCore",
-                                   "SmaatoSDKInterstitial",
-                                   "SmaatoSDKNative",
-                                   "SmaatoSDKOpenMeasurement",
-                                   "SmaatoSDKOutstream",
-                                   "SmaatoSDKRewardedAds",
-                                   "SmaatoSDKRichMedia",
-                                   "SmaatoSDKVideo"],
-                    path: "./Sources/SmaatoSources"),
-        
-            .target(name:"AATKit-SmartAd",
-                    dependencies: ["SASDisplayKit","SCSCoreKit"],
-                    path: "./Sources/SmartAdSources"),
-        
-            .target(name:"AATKit-AdColony",
-                    dependencies: ["AATAdColonyAdapter","AdColony"],
-                    path: "./Sources/AdColonySources"),
-        
-            .target(name:"AATKit-YOC",
-                    dependencies: ["VisxSDK"],
-                    path: "./Sources/YOCSources"),
-        
-            .target(name:"AATKit-InMobi",
-                    dependencies: ["InMobiSDK"],
-                    path: "./Sources/InMobiSources"),
-        
-            .target(name:"AATKit-AppNexus",
-                    dependencies: ["AppNexusSDK"],
-                    path: "./Sources/AppNexusSources"),
-        
-            .target(name:"AATKit-MoPub",
-                    dependencies: ["MoPubSDK", "OMSDK_Mopub"],
-                    path: "./Sources/MoPubSources"),
-        
-            .target(name:"AATKit-PubNative",
-                    dependencies: ["Pubnative"],
-                    path: "./Sources/PubnativeSources"),
-        
-            .target(name:"AATKit-Unity",
-                    dependencies: ["Unity"],
-                    path: "./Sources/UnitySources"),
+        .target(name: "AATKit-AppLovin",
+                dependencies: ["AppLovin"],
+                path: "./Sources/AppLovinSources",
+                resources: [
+                    .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
+                ]
+               ),
+        .target(name:"AATKit-Amazon",
+                dependencies: ["DTBiOSSDK"],
+                path: "./Sources/AmazonSources"),
+        .target(name:"AATKit-OguryCMP",
+                dependencies: ["OguryCMP"],
+                path: "./Sources/OguryCMPSources"),
+        .target(name:"AATKit-GoogleCMP",
+                dependencies: ["GoogleCMP"],
+                path: "./Sources/GoogleCMPSources"),
+        .target(name:"AATKit-Smaato",
+                dependencies: ["OMSDK_Smaato",
+                               "SmaatoSDKBanner",
+                               "SmaatoSDKCore",
+                               "SmaatoSDKInterstitial",
+                               "SmaatoSDKNative",
+                               "SmaatoSDKOpenMeasurement",
+                               "SmaatoSDKOutstream",
+                               "SmaatoSDKRewardedAds",
+                               "SmaatoSDKRichMedia",
+                               "SmaatoSDKVideo"],
+                path: "./Sources/SmaatoSources"),
+        .target(name:"AATKit-SmartAd",
+                dependencies: ["SASDisplayKit","SCSCoreKit"],
+                path: "./Sources/SmartAdSources"),
+        .target(name:"AATKit-AdColony",
+                dependencies: ["AATAdColonyAdapter","AdColony"],
+                path: "./Sources/AdColonySources"),
+        .target(name:"AATKit-YOC",
+               dependencies: ["VisxSDK"],
+               path: "./Sources/YOCSources"),
+        .target(name:"AATKit-InMobi",
+                dependencies: ["InMobiSDK"],
+                path: "./Sources/InMobiSources"),
+        .target(name:"AATKit-AppNexus",
+                dependencies: ["AppNexusSDK"],
+                path: "./Sources/AppNexusSources"),
+        .target(name:"AATKit-MoPub",
+                dependencies: ["MoPubSDK", "OMSDK_Mopub"],
+                path: "./Sources/MoPubSources"),
+        .target(name:"AATKit-PubNative",
+                dependencies: ["Pubnative"],
+                path: "./Sources/PubnativeSources"),
+        .target(name:"AATKit-Unity",
+                dependencies: ["Unity"],
+                path: "./Sources/UnitySources"),
         
         // Mark: Binary Targets
         .binaryTarget(name: "AATKitFramework", path: "./Dependencies/AATKit/AATKit.xcframework"),
