@@ -193,6 +193,10 @@
 		<data>
 		pyi6ihjkTiiVZlMQNtR0kYa8Avo=
 		</data>
+		<key>LICENSE</key>
+		<data>
+		ATUkm5ksn4eII3dsfTcBMnongXo=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		qlqa8EnSLpF8jdgECNK6BLPLl9U=
@@ -674,6 +678,17 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ATUkm5ksn4eII3dsfTcBMnongXo=
+			</data>
+			<key>hash2</key>
+			<data>
+			aTDwcLVuVwNb5tdJNCUEVkMmpGjPeU3YwWbtrgTlh2U=
+			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
