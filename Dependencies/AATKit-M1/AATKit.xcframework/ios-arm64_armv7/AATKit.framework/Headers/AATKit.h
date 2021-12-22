@@ -35,6 +35,7 @@ typedef NS_ENUM(NSInteger, AATKitAdNetwork) {
     AATCriteoSDK,
     AATDFP,
     AATFacebook,
+    AATFeedAd,
     AATInmobi,
     AATMoPub,
     AATOgury,
@@ -437,6 +438,13 @@ Will notify the AATKitStatisticsDelegate with every ad space counting event
  */
 - (void)AATKitCountedClickForNetwork:(AATKitAdNetwork)network;
 
+/**
+ Will notify the AATKitStatisticsDelegate with every impression counting event for Direct Deal rules
+@param network the Ad Network that returned the adv for this impression
+ */
+- (void)AATKitCountedDirectDealsImpressionForNetwork:(AATKitAdNetwork)network;
+
+
 @end
 
 /**
@@ -446,6 +454,37 @@ Will notify the AATKitStatisticsDelegate with every ad space counting event
 
 - (void)onReportSent:(NSString *)report;
 
+@end
+
+/**
+ * AATKit rule mediation type
+ *
+ *
+ * @see +[AATKit setPlacementAlign:forPlacement:]
+ */
+typedef NS_ENUM(NSUInteger, AATMediation) {
+    AATMedationAny,
+    AATMediationWaterfall,
+    AATMediationAuction,
+    AATMediationMayo,
+};
+
+@interface AATKitImpression : NSObject
+
+@property NSString * _Nullable bannerSize;
+@property AATKitAdNetwork adNetwork;
+@property NSString * _Nullable networkKey;
+@property BOOL isDirectDeal;
+@property AATMediation mediationType;
+@property double price;
+
+- (instancetype)init NS_UNAVAILABLE;
+- (NSString *) getAdNetworkName;
+- (NSString *) getMediationTypeName;
+@end
+
+@protocol AATImpressionDelegate <NSObject>
+- (void) didCountImpression:(AATKitImpression *)impression;
 @end
 
 /**
@@ -508,6 +547,11 @@ NS_SWIFT_NAME(init(configuration:statisticsDelegate:));
 /// Change the BannerCache delegate
 /// Set a new delegate to receive  firstBannerLoaded notification
 - (void)setCacheDelegate:(nullable id<AATBannerCacheDelegate>)delegate;
+
+/// Change the impressions counting delegate
+/// Set a new delegate to receive  impressions notification
+- (void)setImpressionDelegate:(nullable id<AATImpressionDelegate>)impressionsDelegate;
+
 /// @brief Returns  banner ad view,
 /// This method respects the frequency capping, set by AATBannerCacheConfiguration.minimumDelay
 /// @return UIView
@@ -1288,6 +1332,24 @@ typedef NS_ENUM(NSInteger, AdChoicesIconPosition) {
 + (nullable NSObject<AATKitPlacement>*)createNativeAdPlacement:(nonnull NSString*)placementName
                                              supportsMainImage:(BOOL)supportsMainImage
                                          andStatisticsDelegate:(nullable NSObject <AATKitStatisticsDelegate>*)statisticsDelegate;
+
+/**
+ * Set impressionDelegate for in-feed banner placement.
+ *
+ * @param impressionDelegate The delegate that would be notified with the impressions counting events
+ * @param placement The placement that you want to observe impressions countig for
+ *
+ */
++ (void)setPlacementImpressionDelegate:(NSObject <AATImpressionDelegate>* _Nonnull)impressionDelegate forBannerPlacement:(id _Nonnull)placement;
+
+/**
+ * Set impressionDelegate for AATKitPlacement.
+ *
+ * @param impressionDelegate The delegate that would be notified with the impressions counting events
+ * @param placement The placement that you want to observe impressions countig for
+ *
+ */
++ (void)setPlacementImpressionDelegate:(NSObject <AATImpressionDelegate>* _Nonnull)impressionDelegate forPlacement:(NSObject <AATKitPlacement> *_Nonnull)placement;
 
 /**
  * Obtain a reference to a previously created placement.
