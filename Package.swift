@@ -84,7 +84,7 @@ let package = Package(
                 dependencies: ["AppLovin"],
                 path: "./Sources/AppLovinSources",
                 resources: [
-                    .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
+                    .process("./Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
                 ]
                ),
         .target(name:"AATKit-Amazon",
