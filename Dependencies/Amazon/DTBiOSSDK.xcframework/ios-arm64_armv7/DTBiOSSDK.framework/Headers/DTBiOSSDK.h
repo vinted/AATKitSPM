@@ -20,7 +20,6 @@ FOUNDATION_EXPORT const unsigned char DTBiOSSDKVersionString[];
 #import <DTBiOSSDK/DTBAdSize.h>
 #import <DTBiOSSDK/DTBAdResponse.h>
 #import <DTBiOSSDK/DTBLog.h>
-#import <DTBiOSSDK/DTBTimeTrace.h>
 #import <DTBiOSSDK/UIView+DTB.h>
 #import <DTBiOSSDK/DTBAdView.h>
 #import <DTBiOSSDK/DTBAdResponse+Mediation.h>
@@ -35,3 +34,4 @@ FOUNDATION_EXPORT const unsigned char DTBiOSSDKVersionString[];
 #import <DTBiOSSDK/DTBFetchFactory.h>
 #import <DTBiOSSDK/DTBFetchManager.h>
 #import <DTBiOSSDK/APSAnalyticsLib.h>
+#import <DTBiOSSDK/APSCacheManager.h>

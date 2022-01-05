@@ -7,6 +7,18 @@
 #import <Foundation/Foundation.h>
 #import "DTBExpectedSize.h"
 
+#define APS_ADMOB_CONST_SLOT_UUID @"slotUUId"
+#define APS_ADMOB_CONST_REQUEST_ID @"requestId"
+#define APS_ADMOB_CONST_SLOT_GROUP @"slotGroup"
+#define APS_ADMOB_CONST_WIDTH @"width"
+#define APS_ADMOB_CONST_HEIGHT @"height"
+
+#define APS_AAX_PRICEPOINT_VAL @"event_server_parameter"
+#define APS_AAX_PRICE_POINT_LENGTH 12
+
+#define COMPARE_LESS_THAN_OR_EQUAL_TO @"leq"
+#define COMPARE_GREATER_THAN_OR_EQUAL_TO @"geq"
+#define COMPARE_EQUAL_TO @"eq"
 
 NS_ASSUME_NONNULL_BEGIN
 @class DTBAdResponse;
@@ -39,6 +51,17 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL) isFetchManagerPresentForSmartBanner;
 
 +(void)skadnHelper:(NSString *)label withInfo:(NSString *)info;
+
++(NSString *) generateRandomUniqueNumber;
++(NSArray *) createAdMobBannerRequestKeyword:(NSString * _Nonnull)slotUUId width:(NSInteger)width height:(NSInteger)height;
++(NSArray *) createAdMobInterstitialRequestKeyword:(NSString * _Nonnull)slotUUId;
++(NSArray *) createAdMobBannerRequestKeywordWithSlotGroup:(NSString * _Nonnull)slotGroup;
++(NSString *) getValueForKeyFromAdMobKeywords:(NSArray * _Nonnull)adMobKeywords key:(NSString * _Nonnull)key;
++(BOOL) validateAdMobCustomSingleEventPricePoint:(NSString *)serverParameter parameters:(NSDictionary * _Nullable)params;
++(NSString *) reverseString:(NSString *)input;
++(BOOL) validateAdMobBannerCustomEventWithExpectedSizeHandlerGeneric:(id<DTBExpectedSize>)expectedSizeHandler  serverParameter: (NSString *)serverParameter parameters:(NSDictionary * _Nullable)params isSpp:(BOOL)isSpp;
++(BOOL) validateAdMobInterstitialCustomEventGeneric:(NSString *)serverParameter parameters:(NSDictionary * _Nullable)params isSpp:(BOOL)isSpp;
+
 
 @end
 

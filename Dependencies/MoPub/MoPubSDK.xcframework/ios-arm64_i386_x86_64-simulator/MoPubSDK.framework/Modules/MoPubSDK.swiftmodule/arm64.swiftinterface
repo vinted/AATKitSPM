@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoPubSDK
 import AppTrackingTransparency
 import CoreLocation
@@ -9,7 +9,8 @@ import Foundation
 import StoreKit
 import Swift
 import UIKit
-extension CreativeExperienceSettings {
+import _Concurrency
+extension MoPubSDK.CreativeExperienceSettings {
   @objc(MPCreativeExperienceSettingsEndCardType) public enum EndCardType : Swift.Int {
     case none
     case `static`
@@ -41,7 +42,7 @@ extension CreativeExperienceSettings {
   @objc override dynamic public init()
   @objc deinit
 }
-extension AdvertisingTrackingAuthorization {
+extension MoPubSDK.AdvertisingTrackingAuthorization {
   @objc public static var statusValue: Swift.UInt {
     @objc get
   }
@@ -66,12 +67,11 @@ extension AdvertisingTrackingAuthorization {
   @objc final public let minStaticEndCardDuration: Foundation.TimeInterval
   @objc final public let minInteractiveEndCardDuration: Foundation.TimeInterval
   required public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
-extension UIView {
-  @objc dynamic public var isVisible: Swift.Bool {
+extension UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var isVisible: Swift.Bool {
     @objc get
   }
 }
@@ -125,7 +125,6 @@ extension UIView {
   @objc final public func invalidate()
   @objc final public func pause()
   @objc final public func scheduleNow()
-  @objc override dynamic public init()
 }
 @_hasMissingDesignatedInitializers @objc(MPCreativeExperienceSettings) public class CreativeExperienceSettings : ObjectiveC.NSObject, Swift.Codable {
   @objc public static var defaultValue: MoPubSDK.CreativeExperienceSettings
@@ -139,7 +138,6 @@ extension UIView {
     @objc get
   }
   required public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -161,7 +159,6 @@ extension UIView {
   @objc public var impressionData: StoreKit.SKAdImpression? {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(MPConsentSyncSerialNetworkSession) public class ConsentSyncSerialNetworkSession : ObjectiveC.NSObject {
@@ -175,13 +172,13 @@ extension UIView {
   @objc override dynamic public init()
   @objc deinit
 }
-extension DeviceInformation {
+extension MoPubSDK.DeviceInformation {
   @objc public static var appTransportSecuritySettingsValue: Swift.Int
   @objc dynamic public static var applicationVersion: Swift.String? {
     @objc get
   }
 }
-extension DeviceInformation {
+extension MoPubSDK.DeviceInformation {
   @objc dynamic public static var cellularService: MoPubSDK.CellularService?
   @objc public static var currentNetworkStatus: MoPubSDK.NetworkStatus {
     @objc get
@@ -210,7 +207,6 @@ extension DeviceInformation {
   @objc public var clickthroughURL: Foundation.URL? {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(MPConversionManager) final public class ConversionManager : ObjectiveC.NSObject {
@@ -249,7 +245,6 @@ extension DeviceInformation {
   @objc public convenience init(impressionTime: Foundation.TimeInterval, requiredViewVisibilityPercentage: CoreGraphics.CGFloat, completion: @escaping MoPubSDK.AdImpressionTimer.Completion)
   @objc deinit
   @objc final public func startTracking(view: UIKit.UIView)
-  @objc override dynamic public init()
 }
 @_inheritsConvenienceInitializers @objc(MPClickDisplayTracker) public class ClickDisplayTracker : ObjectiveC.NSObject {
   @objc(MPClickDisplayTrackerDisplayType) public enum DisplayType : Swift.UInt {
@@ -267,12 +262,12 @@ extension DeviceInformation {
   @objc override dynamic public init()
   @objc deinit
 }
-extension ClickDisplayTracker.DisplayType : Swift.CustomStringConvertible {
+extension MoPubSDK.ClickDisplayTracker.DisplayType : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension ClickDisplayTracker.DisplayType : Swift.CaseIterable {
+extension MoPubSDK.ClickDisplayTracker.DisplayType : Swift.CaseIterable {
   public typealias AllCases = [MoPubSDK.ClickDisplayTracker.DisplayType]
   public static var allCases: [MoPubSDK.ClickDisplayTracker.DisplayType] {
     get
@@ -282,7 +277,6 @@ extension ClickDisplayTracker.DisplayType : Swift.CaseIterable {
   @objc final public let skipMin: Foundation.TimeInterval
   @objc final public let skipAfter: Foundation.TimeInterval
   required public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -301,7 +295,7 @@ extension ClickDisplayTracker.DisplayType : Swift.CaseIterable {
     get
   }
 }
-extension DeviceInformation {
+extension MoPubSDK.DeviceInformation {
   @objc public static var enableLocation: Swift.Bool
   @objc public static var locationAuthorizationStatus: MoPubSDK.LocationAuthorizationStatus {
     @objc get
@@ -316,7 +310,6 @@ extension DeviceInformation {
   @objc public var currentRadioAccessTechnology: MoPubSDK.NetworkStatus {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(MPCreativeExperienceAdSettings) public class CreativeExperienceAdSettings : ObjectiveC.NSObject, Swift.Codable {
@@ -324,7 +317,6 @@ extension DeviceInformation {
   @objc final public let showCountdownTimer: Swift.Bool
   @objc final public let countdownTimerDelay: Foundation.TimeInterval
   required public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -333,29 +325,26 @@ extension DeviceInformation {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(MPImageCreativeView) public class ImageCreativeView : UIKit.UIImageView {
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+@objc(MPImageCreativeView) @_Concurrency.MainActor(unsafe) public class ImageCreativeView : UIKit.UIImageView {
+  @objc @_Concurrency.MainActor(unsafe) required dynamic public init?(coder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) override dynamic public init(frame: CoreGraphics.CGRect)
   @objc dynamic public convenience init()
-  @objc public var isClickable: Swift.Bool {
+  @objc @_Concurrency.MainActor(unsafe) public var isClickable: Swift.Bool {
     @objc get
   }
-  @objc public func enableClick()
-  @objc weak public var delegate: MoPubSDK.ImageCreativeViewDelegate?
-  @objc override dynamic public func layoutSubviews()
-  @objc override dynamic public var image: UIKit.UIImage? {
-    @objc get
-    @objc set(value)
+  @objc @_Concurrency.MainActor(unsafe) public func enableClick()
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: MoPubSDK.ImageCreativeViewDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var image: UIKit.UIImage? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set(value)
   }
-  @objc override dynamic public init(image: UIKit.UIImage?)
-  @available(iOS 3.0, *)
-  @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
   @objc deinit
 }
 @objc(MPImageCreativeViewDelegate) public protocol ImageCreativeViewDelegate {
   @objc optional func imageCreativeViewWasClicked(_ imageCreativeView: MoPubSDK.ImageCreativeView)
 }
-extension DeviceInformation {
+extension MoPubSDK.DeviceInformation {
   @objc public static var ifa: Swift.String? {
     @objc get
   }

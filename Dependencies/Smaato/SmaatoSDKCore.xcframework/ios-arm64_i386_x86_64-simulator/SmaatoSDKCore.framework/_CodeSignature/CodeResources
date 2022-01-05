@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/SmaatoSDK.h</key>
 		<data>
-		ABPd3dQ7W+sWW8N33Kp9QS9Xg4U=
+		AcPTGI2scFDbxYmpTfDXtvEI0P0=
 		</data>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2zyWCv3Ctzp2Ap+Wz5VnhoxP43s=
+		w5nj86qcMb7fnczVLQfZON+tPn8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -166,11 +166,11 @@
 		</data>
 		<key>PrivateHeaders/SMAAPIAdRequest.h</key>
 		<data>
-		f6DVwssMJ3y1mIt9tXoUdg6y9MI=
+		Bbbi0u2vDuhYKihpeyVQLOcyo4w=
 		</data>
 		<key>PrivateHeaders/SMAAPIAdRequestDefines.h</key>
 		<data>
-		eXp2m5TpyHoCdmdEnj8Ylj1MLPo=
+		SuPW6wMQCufcL2EZ58XKEnouc7s=
 		</data>
 		<key>PrivateHeaders/SMAAPIConnector.h</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAPIConstants.h</key>
 		<data>
-		6yo11WKshXqMq8hdG4WmP5Syso8=
+		CBfAcHjnCRQkU1fVCryG7ZOUFbs=
 		</data>
 		<key>PrivateHeaders/SMAAPIContext.h</key>
 		<data>
@@ -524,6 +524,10 @@
 		<data>
 		6gsppooLa9/46uEMGHewugwxp/g=
 		</data>
+		<key>PrivateHeaders/SMALGPDLocationDetector.h</key>
+		<data>
+		6gJPplUG3c8BdKvYQoz4CCOUshw=
+		</data>
 		<key>PrivateHeaders/SMALifeCycleAdBucket.h</key>
 		<data>
 		3JDz91TKPIHQrIXiHJSdullTCZw=
@@ -692,9 +696,13 @@
 		<data>
 		E1Bb9+Fp7LjRlBeIUaG8p1iGXIc=
 		</data>
+		<key>PrivateHeaders/SMASKAdImpressionTracker.h</key>
+		<data>
+		UQWWDxcfrXBJBiBE6M7IB788ZMA=
+		</data>
 		<key>PrivateHeaders/SMASKAdNetwork.h</key>
 		<data>
-		q4krmUHRTqI5ogxlY1lyVMsWSuo=
+		kZbRfdJ+lAYLJeBWZa6WVioPFHY=
 		</data>
 		<key>PrivateHeaders/SMAScheduler.h</key>
 		<data>
@@ -714,7 +722,7 @@
 		</data>
 		<key>PrivateHeaders/SMASystemInformationProvider.h</key>
 		<data>
-		d4FpPTEUhV7gUb9iB1klZm/uiRI=
+		OslMBAYl3uE+9a4mEPKAUNJgBYE=
 		</data>
 		<key>PrivateHeaders/SMATask.h</key>
 		<data>
@@ -806,7 +814,7 @@
 		</data>
 		<key>PrivateHeaders/SmaatoSDK+Private.h</key>
 		<data>
-		tswXMPKqaLhdl0cZgWEoMw70wlA=
+		HlofyTNpXbiY1vboNMtQHT+B3aA=
 		</data>
 		<key>PrivateHeaders/SmaatoSDK+VisibilityTrackerConfiguration.h</key>
 		<data>
@@ -1074,11 +1082,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ABPd3dQ7W+sWW8N33Kp9QS9Xg4U=
+			AcPTGI2scFDbxYmpTfDXtvEI0P0=
 			</data>
 			<key>hash2</key>
 			<data>
-			NvJsJrxuDkiuP6x9Rdgxxwm59WB0N2+sIezX6jGPG04=
+			Wb9xi+JP1yJUTmEV+ZxYxWZN3cTtbOeTJ1IF1ELGOrg=
 			</data>
 		</dict>
 		<key>Headers/SmaatoSDKCore.h</key>
@@ -1272,22 +1280,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f6DVwssMJ3y1mIt9tXoUdg6y9MI=
+			Bbbi0u2vDuhYKihpeyVQLOcyo4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			9yVp4rf7VDwUFAql22fCmZ1PJxDREfN9IBhoLhbfY+g=
+			TK/bVI3p0RILWs9LbpYWoKsruid7MWtZYWvnCpM52u8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIAdRequestDefines.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eXp2m5TpyHoCdmdEnj8Ylj1MLPo=
+			SuPW6wMQCufcL2EZ58XKEnouc7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZmawE56AX5goG3MEn3r8nRsUG894qWstef8hM/YyEF8=
+			bfoqCEVLqnv2ivY2htZPX05UW942MmxnF6J8QPwRdOQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIConnector.h</key>
@@ -1305,11 +1313,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6yo11WKshXqMq8hdG4WmP5Syso8=
+			CBfAcHjnCRQkU1fVCryG7ZOUFbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			1vQkpTcUmhhJRpkvrdgitMCxC/Mz0DyR84+ahY+2lKs=
+			PL93a45pDep4tD0umdc1aZUz7FYjWodkudGSe66wJc8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIContext.h</key>
@@ -2258,6 +2266,17 @@
 			1ulewKBki5caI+r/apUSdAMce9RbqKyZTBzQyaRB23o=
 			</data>
 		</dict>
+		<key>PrivateHeaders/SMALGPDLocationDetector.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6gJPplUG3c8BdKvYQoz4CCOUshw=
+			</data>
+			<key>hash2</key>
+			<data>
+			xG9eRX1mrOZtEdKLuDcd7ZhNRw73ke0S5S8DlPvdiSk=
+			</data>
+		</dict>
 		<key>PrivateHeaders/SMALifeCycleAdBucket.h</key>
 		<dict>
 			<key>hash</key>
@@ -2720,15 +2739,26 @@
 			eCMk24iy7HWcfgCkZYwdy1MZ49U/KV25mlOUriYyQVo=
 			</data>
 		</dict>
+		<key>PrivateHeaders/SMASKAdImpressionTracker.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UQWWDxcfrXBJBiBE6M7IB788ZMA=
+			</data>
+			<key>hash2</key>
+			<data>
+			LiModH0vthocJZrdDO/YuZBEr+cEoevFNCl6EsRcBhs=
+			</data>
+		</dict>
 		<key>PrivateHeaders/SMASKAdNetwork.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q4krmUHRTqI5ogxlY1lyVMsWSuo=
+			kZbRfdJ+lAYLJeBWZa6WVioPFHY=
 			</data>
 			<key>hash2</key>
 			<data>
-			AEpPOxKxKi+IrOEf59IdwTrnAzesMvRrY1arx2C/xpw=
+			6lNDLEgm1EVSwhLw5IRdvGwqQgsChuFWNqFryHl3aMc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAScheduler.h</key>
@@ -2779,11 +2809,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d4FpPTEUhV7gUb9iB1klZm/uiRI=
+			OslMBAYl3uE+9a4mEPKAUNJgBYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ci/APR91ydY2nN6mVWsRKir/8wtPr+G2xgdRPJqvLis=
+			RZkNk2xiqHwMm+GQ04ubDzQjfTuak94XQMgqmCgxMls=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMATask.h</key>
@@ -3032,11 +3062,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tswXMPKqaLhdl0cZgWEoMw70wlA=
+			HlofyTNpXbiY1vboNMtQHT+B3aA=
 			</data>
 			<key>hash2</key>
 			<data>
-			X9NjqcjO0oPKlpB2HWvSVNHb+HP9vQaVIGGujqmc7+E=
+			zQHCRuRePPzNjBMgl2dVNXgOv01z6Hm5WY0E/lT3KS4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SmaatoSDK+VisibilityTrackerConfiguration.h</key>

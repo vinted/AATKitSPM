@@ -113,4 +113,20 @@ typedef NS_ENUM(NSUInteger, SMAGender) {
 /// Id assigned to the user by publisher. The id is subject to GDPR consent if in EU.
 /// Default value is \c nil.
 @property (class, nonatomic, copy, nullable) NSString *publisherProvidedIdentifier;
+
+/// Set to YES to indicate that we have to apply LGPD restrictions.
+/// The default value is \c NO.
+@property (class, nonatomic, readonly) BOOL hasLGPD;
+
+/// Set to YES to indicate that LGPD should always be applied.
+/// The default value is \c NO.
+@property (class, nonatomic) BOOL forceLGPD;
+
+/// Set to YES to indicate that LGPD consent will added to all demands.
+/// The default value is \c NO.
+@property (class, nonatomic, nullable) NSNumber* isLGPDConsentEnabled;
+
+/// Returns static informations about the SDK and settings as JSON-String
+@property (class, nonatomic, readonly) NSString* _Nonnull collectSignals;
+
 @end

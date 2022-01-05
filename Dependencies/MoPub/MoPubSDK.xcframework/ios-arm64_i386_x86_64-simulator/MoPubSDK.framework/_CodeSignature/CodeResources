@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		C0PfWGNOcchPITIU2MTk8r59eoQ=
+		zEoGKtN4/QJEDzENAKmqBplmZFU=
 		</data>
 		<key>Headers/MOPUBDisplayAgentType.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/MPConstants.h</key>
 		<data>
-		rOEPBC/wbakSxExPP1aBGBtR2Jk=
+		Nv79bmIBgN7P7ZZhbssRJL2t9FI=
 		</data>
 		<key>Headers/MPDiskLRUCache.h</key>
 		<data>
@@ -354,11 +354,11 @@
 		</data>
 		<key>Headers/MoPubSDK-Swift.h</key>
 		<data>
-		dFhyDLoW2bGL2S9m9/QXyu0wTKE=
+		0J0e+aQ3QFyNTsgW+UdSFjoznKc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zARyFO2Sh/LbSLswyaNUB0ul4rQ=
+		6FI/r9d4aZYUPNZc90hM3Ao5qQI=
 		</data>
 		<key>MPAdapters.plist</key>
 		<data>
@@ -430,75 +430,75 @@
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jIDGgZARPMbVJ2qAXvw2pfhUljc=
+		JvJSjoc/dW/FC/C7UjsJG/lCRnY=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qsJZCvke4AeswC752cz+NQuiNpI=
+		7+sTr3yKW/TZMkQ9Ue9GX0ckkRE=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0xLZADNyoAvDoB0Ydl2FMR6MJXM=
+		0FUmUW+UzZW9iO4D0ENHdiIIGYo=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		jIDGgZARPMbVJ2qAXvw2pfhUljc=
+		JvJSjoc/dW/FC/C7UjsJG/lCRnY=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		qsJZCvke4AeswC752cz+NQuiNpI=
+		7+sTr3yKW/TZMkQ9Ue9GX0ckkRE=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		0xLZADNyoAvDoB0Ydl2FMR6MJXM=
+		0FUmUW+UzZW9iO4D0ENHdiIIGYo=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HbHWe2bfn/aSpVMCCItGlFrlnrI=
+		x4SeJPE7rS4fohIWk/eXgcsFBjk=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6O6j61KsVgGAkvzXIqwIJKnw5Hk=
+		rx2pXcsEEkiaOItOeeYANBqfz70=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		15RwsSEQWP6Zy13RDoOnMp8Rbco=
+		YYC3cQ4FnPZJx1BGvPYjUcMPtPw=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/i386.swiftdoc</key>
 		<data>
-		HbHWe2bfn/aSpVMCCItGlFrlnrI=
+		x4SeJPE7rS4fohIWk/eXgcsFBjk=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/i386.swiftinterface</key>
 		<data>
-		6O6j61KsVgGAkvzXIqwIJKnw5Hk=
+		rx2pXcsEEkiaOItOeeYANBqfz70=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/i386.swiftmodule</key>
 		<data>
-		15RwsSEQWP6Zy13RDoOnMp8Rbco=
+		YYC3cQ4FnPZJx1BGvPYjUcMPtPw=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		n8QcjiXMNIsJXQvRHPDHcsaqWec=
+		6WL03vIrU+5QSooGc25r/gvhbuA=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		E/bSJXTev/CDjJWqh1rbTGaOZMo=
+		bwGAEKyvve5rp4en3ZyE9AO3VZE=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HmkfPmxtmTSBX3DHOl15RZSzoKE=
+		rkeZ99EHcSPwcF12m0r6rBNIFR8=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		n8QcjiXMNIsJXQvRHPDHcsaqWec=
+		6WL03vIrU+5QSooGc25r/gvhbuA=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		E/bSJXTev/CDjJWqh1rbTGaOZMo=
+		bwGAEKyvve5rp4en3ZyE9AO3VZE=
 		</data>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		HmkfPmxtmTSBX3DHOl15RZSzoKE=
+		rkeZ99EHcSPwcF12m0r6rBNIFR8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -515,11 +515,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C0PfWGNOcchPITIU2MTk8r59eoQ=
+			zEoGKtN4/QJEDzENAKmqBplmZFU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ejh2sUnu3QgHE137EkF3wA2pQ2RNsJZj06n846cTWpE=
+			tqt492u5eYDN+FQpBsiHKIT7PPdjR/hY8tT3mK6ZXHA=
 			</data>
 		</dict>
 		<key>Headers/MOPUBDisplayAgentType.h</key>
@@ -790,11 +790,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rOEPBC/wbakSxExPP1aBGBtR2Jk=
+			Nv79bmIBgN7P7ZZhbssRJL2t9FI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OeJRJF8wL3pfNWr89JH4qf6zPOfIWHzcnjQvKAewDdQ=
+			4E4Kl7BVFltDTHSzohE+MEJv0FhUpJNqJ/I3/i+LvcM=
 			</data>
 		</dict>
 		<key>Headers/MPDiskLRUCache.h</key>
@@ -1472,11 +1472,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dFhyDLoW2bGL2S9m9/QXyu0wTKE=
+			0J0e+aQ3QFyNTsgW+UdSFjoznKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			A+tm1KUQegeYIwaAidsWcZlDvAC6wZGnG9YMjnv09H8=
+			vZdu5oSuNFXcSMUynuuIB0wXhlOijRewP//Bvu8Cl9A=
 			</data>
 		</dict>
 		<key>MPAdapters.plist</key>
@@ -1670,198 +1670,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jIDGgZARPMbVJ2qAXvw2pfhUljc=
+			JvJSjoc/dW/FC/C7UjsJG/lCRnY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ViZ7R9Ag7vAi4Eqd4aEuQXZx9Bq7Y99Uw0Qa8UQ2rUo=
+			REExKziEtrA7b5CcCc+jMKBQSEPA6St4AGutg5Df0hs=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qsJZCvke4AeswC752cz+NQuiNpI=
+			7+sTr3yKW/TZMkQ9Ue9GX0ckkRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			JHP1xjPab4ebZcADchWDgjByy2vJEzF62JXTf3JoU/Q=
+			aRbRmjHbr7T1ZGcQtWE6AFIKAhKISgjZyBajgclhAfQ=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0xLZADNyoAvDoB0Ydl2FMR6MJXM=
+			0FUmUW+UzZW9iO4D0ENHdiIIGYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			EaWUSdBDatSTppXrfyuBFiU8tD6sD/o7g9eryhJ7trQ=
+			MZH2V4YLAO2hFMBXqBrYhUSL1RfZGlpACgS3LAlZLu4=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jIDGgZARPMbVJ2qAXvw2pfhUljc=
+			JvJSjoc/dW/FC/C7UjsJG/lCRnY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ViZ7R9Ag7vAi4Eqd4aEuQXZx9Bq7Y99Uw0Qa8UQ2rUo=
+			REExKziEtrA7b5CcCc+jMKBQSEPA6St4AGutg5Df0hs=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qsJZCvke4AeswC752cz+NQuiNpI=
+			7+sTr3yKW/TZMkQ9Ue9GX0ckkRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			JHP1xjPab4ebZcADchWDgjByy2vJEzF62JXTf3JoU/Q=
+			aRbRmjHbr7T1ZGcQtWE6AFIKAhKISgjZyBajgclhAfQ=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0xLZADNyoAvDoB0Ydl2FMR6MJXM=
+			0FUmUW+UzZW9iO4D0ENHdiIIGYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			EaWUSdBDatSTppXrfyuBFiU8tD6sD/o7g9eryhJ7trQ=
+			MZH2V4YLAO2hFMBXqBrYhUSL1RfZGlpACgS3LAlZLu4=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HbHWe2bfn/aSpVMCCItGlFrlnrI=
+			x4SeJPE7rS4fohIWk/eXgcsFBjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			DYbjEpuCs1YYZvtEG6SMmVVyrXPKygPjDGlR7qaK3PM=
+			A0glJZjhrCadwR/de2sgMp+M1HKXH3p3VwFMVsktg10=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6O6j61KsVgGAkvzXIqwIJKnw5Hk=
+			rx2pXcsEEkiaOItOeeYANBqfz70=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y3NmLweoemArhT6yCwTh2A/qZkpytZo/n1+or4FYsfI=
+			W9ah/XYb3kLRekR/imZeKefg1/4nlZLTTH8cs+kvr2Y=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			15RwsSEQWP6Zy13RDoOnMp8Rbco=
+			YYC3cQ4FnPZJx1BGvPYjUcMPtPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			J22u8ub4EfSGavwSyj4mA16n71SBnrC4ADZ5F0qH5UY=
+			EijFnLXZF4sp6cupeMeqoNoY3qsZrBHx0kwoC5s0KIM=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HbHWe2bfn/aSpVMCCItGlFrlnrI=
+			x4SeJPE7rS4fohIWk/eXgcsFBjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			DYbjEpuCs1YYZvtEG6SMmVVyrXPKygPjDGlR7qaK3PM=
+			A0glJZjhrCadwR/de2sgMp+M1HKXH3p3VwFMVsktg10=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6O6j61KsVgGAkvzXIqwIJKnw5Hk=
+			rx2pXcsEEkiaOItOeeYANBqfz70=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y3NmLweoemArhT6yCwTh2A/qZkpytZo/n1+or4FYsfI=
+			W9ah/XYb3kLRekR/imZeKefg1/4nlZLTTH8cs+kvr2Y=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			15RwsSEQWP6Zy13RDoOnMp8Rbco=
+			YYC3cQ4FnPZJx1BGvPYjUcMPtPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			J22u8ub4EfSGavwSyj4mA16n71SBnrC4ADZ5F0qH5UY=
+			EijFnLXZF4sp6cupeMeqoNoY3qsZrBHx0kwoC5s0KIM=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n8QcjiXMNIsJXQvRHPDHcsaqWec=
+			6WL03vIrU+5QSooGc25r/gvhbuA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hHzEEHb8vNn7lLX3szfdpfhjGaV48UbzpajXU9z88eA=
+			8VX/DlzYF/HU2wbTgoPxaGUy+Pu3OAT0DurtlE8F4Uw=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E/bSJXTev/CDjJWqh1rbTGaOZMo=
+			bwGAEKyvve5rp4en3ZyE9AO3VZE=
 			</data>
 			<key>hash2</key>
 			<data>
-			YLQa/SxyTwdOO+5NBnqFWFQarroAys+EI/BRb5XIUwc=
+			UrcaMdjmg+1gJTCg23DTBkv0LalequOdlFV1FZf4WIo=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HmkfPmxtmTSBX3DHOl15RZSzoKE=
+			rkeZ99EHcSPwcF12m0r6rBNIFR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ruMLAIjKDp98/Ms6WSMaDU2rMqOjEKcqYXCr61OtTVI=
+			bK0niJg/UZg78ZfmP5Y28CV5KxgP4QGtZC7XuKUA+nQ=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n8QcjiXMNIsJXQvRHPDHcsaqWec=
+			6WL03vIrU+5QSooGc25r/gvhbuA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hHzEEHb8vNn7lLX3szfdpfhjGaV48UbzpajXU9z88eA=
+			8VX/DlzYF/HU2wbTgoPxaGUy+Pu3OAT0DurtlE8F4Uw=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E/bSJXTev/CDjJWqh1rbTGaOZMo=
+			bwGAEKyvve5rp4en3ZyE9AO3VZE=
 			</data>
 			<key>hash2</key>
 			<data>
-			YLQa/SxyTwdOO+5NBnqFWFQarroAys+EI/BRb5XIUwc=
+			UrcaMdjmg+1gJTCg23DTBkv0LalequOdlFV1FZf4WIo=
 			</data>
 		</dict>
 		<key>Modules/MoPubSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HmkfPmxtmTSBX3DHOl15RZSzoKE=
+			rkeZ99EHcSPwcF12m0r6rBNIFR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ruMLAIjKDp98/Ms6WSMaDU2rMqOjEKcqYXCr61OtTVI=
+			bK0niJg/UZg78ZfmP5Y28CV5KxgP4QGtZC7XuKUA+nQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
