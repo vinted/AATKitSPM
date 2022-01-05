@@ -62,7 +62,7 @@ let package = Package(
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.16.0")),
+        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.18.0")),
         .package(name: "GoogleAppMeasurement", url: "https://github.com/google/GoogleAppMeasurement.git", .exact("8.9.1")),
     ],
     targets: [
