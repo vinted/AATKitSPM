@@ -82,8 +82,9 @@ let package = Package(
                 path: "./Sources/GoogleMobileAdsSources"),
         .target(name: "AATKit-AppLovin",
                 dependencies: ["AppLovin"],
-                path: "./Sources/AppLovinSources",
-                resources: [.copy("Resources")]
+                path: "./Sources/AppLovinSources"
+//                ,
+//                resou: [.copy("Resources")]
 //                resources: [
 //                    .copy("Resources/AppLovinSDKResources.bundle")
 ////                    .process("Resources/AppLovinSDKResources.bundle")
