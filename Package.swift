@@ -83,7 +83,7 @@ let package = Package(
         .target(name: "AATKit-AppLovin",
                 dependencies: ["AppLovin"],
                 path: "./Sources/AppLovinSources",
-                resources: [.copy("Resources/AppLovinSDKResources.bundle")]
+//                resources: [.copy("Resources/AppLovinSDKResources.bundle")]
 //                resources: [
 //                    .copy("Resources/AppLovinSDKResources.bundle")
 ////                    .process("Resources/AppLovinSDKResources.bundle")
