@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -8,10 +8,10 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v10)],
     products: [
-        
+
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
         .library(name: "AATKit-M1-Core", targets: ["AATKit-M1-Core"]),
-        
+
         // Dependencies
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
@@ -29,7 +29,7 @@ let package = Package(
         // CMPs
         .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
-        
+
         // Default Dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
@@ -64,6 +64,7 @@ let package = Package(
         // AdNetworks supporting SPM
         .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.18.0")),
         .package(name: "GoogleAppMeasurement", url: "https://github.com/google/GoogleAppMeasurement.git", .exact("8.9.1")),
+        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("10.3.7"))
     ],
     targets: [
         .target(name:"AATKit-Core",
@@ -72,7 +73,7 @@ let package = Package(
         .target(name:"AATKit-M1-Core",
                 dependencies: ["AATKitFramework-M1"],
                 path: "./Sources/AATKit-M1"),
-        
+
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
                 dependencies: [ "GoogleMobileAds",
@@ -80,13 +81,16 @@ let package = Package(
                                 .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
+        .target(name:"AATKit-AdColony",
+                dependencies: ["AATAdColonyAdapter","AdColony"],
+                path: "./Sources/AdColonySources"),
         .target(name: "AATKit-AppLovin",
-                dependencies: ["AppLovin"],
-                path: "./Sources/AppLovinSources",
-                resources: [
-                    .process("Resources/AppLovinSDKResources.bundle")
-                ]
+                dependencies: ["AppLovinSDK"],
+                path: "./Sources/AppLovinSources"
                ),
+        .target(name:"AATKit-AppNexus",
+                dependencies: ["AppNexusSDK"],
+                path: "./Sources/AppNexusSources"),
         .target(name:"AATKit-Amazon",
                 dependencies: ["DTBiOSSDK"],
                 path: "./Sources/AmazonSources"),
@@ -111,18 +115,12 @@ let package = Package(
         .target(name:"AATKit-SmartAd",
                 dependencies: ["SASDisplayKit","SCSCoreKit"],
                 path: "./Sources/SmartAdSources"),
-        .target(name:"AATKit-AdColony",
-                dependencies: ["AATAdColonyAdapter","AdColony"],
-                path: "./Sources/AdColonySources"),
         .target(name:"AATKit-YOC",
                dependencies: ["VisxSDK"],
                path: "./Sources/YOCSources"),
         .target(name:"AATKit-InMobi",
                 dependencies: ["InMobiSDK"],
                 path: "./Sources/InMobiSources"),
-        .target(name:"AATKit-AppNexus",
-                dependencies: ["AppNexusSDK"],
-                path: "./Sources/AppNexusSources"),
         .target(name:"AATKit-MoPub",
                 dependencies: ["MoPubSDK", "OMSDK_Mopub"],
                 path: "./Sources/MoPubSources"),
@@ -132,27 +130,24 @@ let package = Package(
         .target(name:"AATKit-Unity",
                 dependencies: ["Unity"],
                 path: "./Sources/UnitySources"),
-        
+
         // Mark: Binary Targets
         .binaryTarget(name: "AATKitFramework", path: "./Dependencies/AATKit/AATKit.xcframework"),
         .binaryTarget(name: "AATKitFramework-M1", path: "./Dependencies/AATKit-M1/AATKit.xcframework"),
-        
+
         // Google
         .binaryTarget(name: "GoogleMobileAds", path: "./Dependencies/Google/GoogleMobileAds.xcframework"),
         .binaryTarget(name: "AATDependencyHelper", path: "./Dependencies/Google/AATDependencyHelper.xcframework"),
-        
+
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
-        
+
         // Ogury CMP
         .binaryTarget(name: "OguryCMP", path: "./Dependencies/Ogury/OguryChoiceManager.xcframework"),
 
         // Google CMP
         .binaryTarget(name: "GoogleCMP", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
-        
-        // AppLovin
-        .binaryTarget(name: "AppLovin", path: "./Dependencies/AppLovin/AppLovinSDK.xcframework"),
-        
+
         // Smaato
         .binaryTarget(name: "OMSDK_Smaato", path: "./Dependencies/Smaato/OMSDK_Smaato.xcframework"),
         .binaryTarget(name: "SmaatoSDKBanner", path: "./Dependencies/Smaato/SmaatoSDKBanner.xcframework"),
@@ -164,28 +159,28 @@ let package = Package(
         .binaryTarget(name: "SmaatoSDKRewardedAds", path: "./Dependencies/Smaato/SmaatoSDKRewardedAds.xcframework"),
         .binaryTarget(name: "SmaatoSDKRichMedia", path: "./Dependencies/Smaato/SmaatoSDKRichMedia.xcframework"),
         .binaryTarget(name: "SmaatoSDKVideo", path: "./Dependencies/Smaato/SmaatoSDKVideo.xcframework"),
-        
+
         //SmartAd
         .binaryTarget(name: "SASDisplayKit", path: "./Dependencies/SmartAd/SASDisplayKit.xcframework"),
         .binaryTarget(name: "SCSCoreKit", path: "./Dependencies/SmartAd/SCSCoreKit.xcframework"),
-        
+
         //AdColony
         .binaryTarget(name: "AATAdColonyAdapter", path: "./Dependencies/AdColony/AATAdColonyAdapter.xcframework"),
         .binaryTarget(name: "AdColony", path: "./Dependencies/AdColony/AdColony.xcframework"),
-        
+
         // YOC
         .binaryTarget(name: "VisxSDK", path: "./Dependencies/YOC/VisxSDK.xcframework"),
-        
+
         // InMobi
         .binaryTarget(name: "InMobiSDK", path: "./Dependencies/InMobi/InMobiSDK.xcframework"),
-        
+
         // MoPub
         .binaryTarget(name: "MoPubSDK", path: "./Dependencies/MoPub/MoPubSDK.xcframework"),
         .binaryTarget(name: "OMSDK_Mopub", path: "./Dependencies/MoPub/OMSDK_Mopub.xcframework"),
-        
+
         // PubNative
         .binaryTarget(name: "Pubnative", path: "./Dependencies/Pubnative/HyBid.xcframework"),
-        
+
         // Unity
         .binaryTarget(name: "Unity", path: "./Dependencies/Unity/UnityAds.xcframework"),
     ]
