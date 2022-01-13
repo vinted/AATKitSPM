@@ -561,9 +561,10 @@ NS_SWIFT_NAME(init(configuration:statisticsDelegate:));
 /// @param forceConsume  true if cache should try to return banner ignoring the frequency capping set by AATBannerCacheConfiguration.minimumDelay
 /// @return UIView
 - (nullable UIView *)consume:(BOOL) forceConsume;
+
 /// Method to update the used AATAdRequest
 /// No need to call startLoadBanners method after this method
-/// It will automatically call startLoadBanners
+/// It will automatically call startLoadBanners method if shouldRefresh is true
 /// @param request the new ad request
 /// @param shouldRefresh if this boolean set to true:
 /// - Cancel current requests

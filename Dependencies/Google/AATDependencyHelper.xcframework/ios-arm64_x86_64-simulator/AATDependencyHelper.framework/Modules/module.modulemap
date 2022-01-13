@@ -1,0 +1,6 @@
+framework module AATDependencyHelper {
+  umbrella header "AATDependencyHelper.h"
+
+  export *
+  module * { export * }
+}

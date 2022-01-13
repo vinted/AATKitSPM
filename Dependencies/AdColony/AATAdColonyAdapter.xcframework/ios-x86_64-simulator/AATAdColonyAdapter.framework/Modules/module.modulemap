@@ -1,6 +1,0 @@
-framework module AATAdColonyAdapter {
-  umbrella header "AATAdColonyAdapter.h"
-
-  export *
-  module * { export * }
-}
