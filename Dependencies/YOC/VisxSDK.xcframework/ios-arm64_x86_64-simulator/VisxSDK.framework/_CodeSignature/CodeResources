@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/VisxSDK-Swift.h</key>
 		<data>
-		cOse94Zym6cSpVcF2UBDwI2wud4=
+		b6x4DA7wGJzEvOqQ61TvS4Hq8jc=
 		</data>
 		<key>Headers/VisxSDK.h</key>
 		<data>
@@ -70,55 +70,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d6gZs0WlX6fsKQskaWGSmEosJQs=
+		7TnHhv7hvRZRi+k5UyQ/hXVLgJ8=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dLfs24zpqiT9YHUuB1yWIsGlV5Q=
+		J0xRMOFWHGYNEcC/1iPuIkWuaI4=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LBdPQI4dMQjHghNqhTeXG1qqCwU=
+		TMOZSgYw0RVUeqq6XKat8D2c6qw=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		P/fJ2tG/Zpv09glh+NDnHwmQtqo=
+		3q4weRMhrdO7LV430EjMS3oe1xc=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		dLfs24zpqiT9YHUuB1yWIsGlV5Q=
+		J0xRMOFWHGYNEcC/1iPuIkWuaI4=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		LBdPQI4dMQjHghNqhTeXG1qqCwU=
+		TMOZSgYw0RVUeqq6XKat8D2c6qw=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		P/fJ2tG/Zpv09glh+NDnHwmQtqo=
+		3q4weRMhrdO7LV430EjMS3oe1xc=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		k2DaZbPoQmWf8+9TjODZm2xYCYk=
+		a5V7wJmuSX4769KTthdm/zX4/2g=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PbZWcwKNbWuRQJICQ/IHraUsuss=
+		+MUAWbfkO6QWqneJ9peVj/TQ9tk=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7KxOmhBXYzEsFZlSdK7L9+y3TQ8=
+		MtI6K8g2nK5BiDmvMtYuVPf2pNk=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		k2DaZbPoQmWf8+9TjODZm2xYCYk=
+		a5V7wJmuSX4769KTthdm/zX4/2g=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		PbZWcwKNbWuRQJICQ/IHraUsuss=
+		+MUAWbfkO6QWqneJ9peVj/TQ9tk=
 		</data>
 		<key>Modules/VisxSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		7KxOmhBXYzEsFZlSdK7L9+y3TQ8=
+		MtI6K8g2nK5BiDmvMtYuVPf2pNk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>mraid.js</key>
 		<data>
-		v2D9JfaEaXLXLPTgF/AUHl27I/8=
+		aptxSrw8IBJWRs/IzKgNoXfFjmM=
 		</data>
 		<key>omsdk-v1.js</key>
 		<data>
@@ -249,7 +249,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dm27RVjSzq9hUJjvqEqooxNcqeAq04hH5wypJS3zikU=
+			PeVlSgu+anYSrkAN7/33sW0zq+JQ4+A3pBmrcDLfj2E=
 			</data>
 		</dict>
 		<key>Headers/VisxSDK.h</key>
@@ -263,84 +263,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bK3YcJ/RRh8eQly4k/baytfdHfHi0VcaHPSpJ4Rwaro=
+			6qrDZGPTBRb+TKcXUWI9jVET+2aKOMuGB4A3mj8BPgw=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FX3Glx6ZPz5EnzRv/JeiQu/GCxpcNRekvgUpsVeAjLk=
+			mxj8okbHlTuut//ZoCBJpMIZHgtx7i8gj+qMMYowZHY=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nC725ml4zbf5SPf0/npOgWeE4F2FmErXHGKzevHqFC4=
+			0HFHtRVQYFtAmS48nPHL9a1ownMxiSsPVKbuwDWILj8=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bK3YcJ/RRh8eQly4k/baytfdHfHi0VcaHPSpJ4Rwaro=
+			6qrDZGPTBRb+TKcXUWI9jVET+2aKOMuGB4A3mj8BPgw=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FX3Glx6ZPz5EnzRv/JeiQu/GCxpcNRekvgUpsVeAjLk=
+			mxj8okbHlTuut//ZoCBJpMIZHgtx7i8gj+qMMYowZHY=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nC725ml4zbf5SPf0/npOgWeE4F2FmErXHGKzevHqFC4=
+			0HFHtRVQYFtAmS48nPHL9a1ownMxiSsPVKbuwDWILj8=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jr79xZVxv6ws0DljeZryxfaFKdlpBgSbsuj0w932uIw=
+			XsiGfJJbLyGqzjLr4fKOAch2hOBNgh81BIYHE1WaHgs=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wp0pDmSeQtQ08ubQtS2JitsK6sWy3tqG6rXNluOybbM=
+			4fk/95WurQ5uk12QKEMiNvH39fLdSjXWiMBGswkXewA=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8tzd2ZmAAwYIIRaCRRR8vFeCiuoQuHXa8sSO++1rOx0=
+			D6v7w5m+NsS8ykjCd1kt2tPnCeJisO+VpP8UAlJGQX0=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jr79xZVxv6ws0DljeZryxfaFKdlpBgSbsuj0w932uIw=
+			XsiGfJJbLyGqzjLr4fKOAch2hOBNgh81BIYHE1WaHgs=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wp0pDmSeQtQ08ubQtS2JitsK6sWy3tqG6rXNluOybbM=
+			4fk/95WurQ5uk12QKEMiNvH39fLdSjXWiMBGswkXewA=
 			</data>
 		</dict>
 		<key>Modules/VisxSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8tzd2ZmAAwYIIRaCRRR8vFeCiuoQuHXa8sSO++1rOx0=
+			D6v7w5m+NsS8ykjCd1kt2tPnCeJisO+VpP8UAlJGQX0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -354,7 +354,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NqYxJY+Zw123XZusTEuL8ygYGqcSChy82m/HFUK69zE=
+			fbeKEvSxWIPXcoIuighFrptZ6KQ5dgQ2S7KtX3e4FuU=
 			</data>
 		</dict>
 		<key>omsdk-v1.js</key>
