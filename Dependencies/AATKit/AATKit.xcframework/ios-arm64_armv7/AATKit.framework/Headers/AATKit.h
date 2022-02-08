@@ -66,6 +66,66 @@ typedef NS_ENUM(NSInteger, AATManagedConsentState) {
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ AATKitStatisticsDelegate notify you with all placements reporting events Like: - countAdSpace - countImpression ... etc
+ */
+@protocol AATKitStatisticsDelegate <NSObject>
+
+@optional
+
+/**
+Will notify the AATKitStatisticsDelegate with every ad space counting event
+ */
+- (void)AATKitCountedAdSpace;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every ad request event
+@param network the Ad Network that performed the reported request
+ */
+- (void)AATKitCountedRequestForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every ad response event
+@param network the Ad Network that returned the reported response
+ */
+- (void)AATKitCountedResponseForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every impression counting event
+@param network the Ad Network that returned the adv for this impression
+ */
+- (void)AATKitCountedImpressionForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every viewable impression counting event
+@param network the Ad Network that returned the adv for this viewable impression
+ */
+- (void)AATKitCountedVImpressionForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every click event
+@param network the Ad Network that returned the adv for this click
+ */
+- (void)AATKitCountedClickForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every impression counting event for Direct Deal rules
+@param network the Ad Network that returned the adv for this impression
+ */
+- (void)AATKitCountedDirectDealsImpressionForNetwork:(AATKitAdNetwork)network;
+
+
+@end
+
+/**
+ AATReportsDelegate notify you with reporting request parameters
+ */
+@protocol AATReportsDelegate <NSObject>
+
+- (void)onReportSent:(NSString *)report;
+
+@end
+
 @protocol AATAdRequestDelegate;
 
 /// Ad Request
@@ -266,6 +326,13 @@ typedef void (^AATBannerCompletionHandler) (UIView* __nullable bannerView, NSErr
 
 - (void)cleanPlacementData;
 
+/// Update the placement statistics delegate
+///
+/// Should be called when you need to change the statistics events listener
+///
+/// @param statisticsDelegate the new statistics events listener
+- (void)updateStatisticsDelegate:(nonnull NSObject <AATKitStatisticsDelegate> *)statisticsDelegate;
+
 @end
 
 @protocol AATKitDelegate;
@@ -394,66 +461,6 @@ typedef void (^AATBannerCompletionHandler) (UIView* __nullable bannerView, NSErr
 @return AATVendorConsent object to be passed to AATKit configurations
 */
 - (instancetype)initWithVendorConsentDelegate:(nonnull NSObject<AATVendorConsentDelegate>*)delegate;
-@end
-
-/**
- AATKitStatisticsDelegate notify you with all placements reporting events Like: - countAdSpace - countImpression ... etc
- */
-@protocol AATKitStatisticsDelegate <NSObject>
-
-@optional
-
-/**
-Will notify the AATKitStatisticsDelegate with every ad space counting event
- */
-- (void)AATKitCountedAdSpace;
-
-/**
- Will notify the AATKitStatisticsDelegate with every ad request event
-@param network the Ad Network that performed the reported request
- */
-- (void)AATKitCountedRequestForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every ad response event
-@param network the Ad Network that returned the reported response
- */
-- (void)AATKitCountedResponseForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every impression counting event
-@param network the Ad Network that returned the adv for this impression
- */
-- (void)AATKitCountedImpressionForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every viewable impression counting event
-@param network the Ad Network that returned the adv for this viewable impression
- */
-- (void)AATKitCountedVImpressionForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every click event
-@param network the Ad Network that returned the adv for this click
- */
-- (void)AATKitCountedClickForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every impression counting event for Direct Deal rules
-@param network the Ad Network that returned the adv for this impression
- */
-- (void)AATKitCountedDirectDealsImpressionForNetwork:(AATKitAdNetwork)network;
-
-
-@end
-
-/**
- AATReportsDelegate notify you with reporting request parameters
- */
-@protocol AATReportsDelegate <NSObject>
-
-- (void)onReportSent:(NSString *)report;
-
 @end
 
 /**
@@ -705,6 +712,12 @@ NS_ASSUME_NONNULL_END
  */
 @protocol AATKitPlacement <NSObject>
 @property (copy) NSString * _Nonnull name;
+
+/// Update the placement statistics delegate
+///
+/// Should be called when you need to change the statistics events listener
+/// @param statisticsDelegate the new statistics events listener
+- (void)updateStatisticsDelegate:(nonnull NSObject <AATKitStatisticsDelegate> *)statisticsDelegate;
 @end
 
 /**
