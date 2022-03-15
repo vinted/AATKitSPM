@@ -1,0 +1,6 @@
+framework module FeedAd {
+  umbrella header "FeedAd.h"
+
+  export *
+  module * { export * }
+}

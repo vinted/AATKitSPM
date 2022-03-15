@@ -1,0 +1,532 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PrebidMobile
+import AdSupport
+import AppTrackingTransparency
+import CoreLocation
+import CoreTelephony
+import Foundation
+import ObjectiveC
+@_exported import PrebidMobile
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import ObjectiveC.runtime
+@objc public class SingleContainerInt : ObjectiveC.NSObject, Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+  @objc final public let value: Swift.Int
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class Signals : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @objc(PBApi) public class Api : PrebidMobile.SingleContainerInt {
+    @objc public static let VPAID_1: PrebidMobile.Signals.Api
+    @objc public static let VPAID_2: PrebidMobile.Signals.Api
+    @objc public static let MRAID_1: PrebidMobile.Signals.Api
+    @objc public static let ORMMA: PrebidMobile.Signals.Api
+    @objc public static let MRAID_2: PrebidMobile.Signals.Api
+    @objc public static let MRAID_3: PrebidMobile.Signals.Api
+    @objc public static let OMID_1: PrebidMobile.Signals.Api
+    @objc required public init(integerLiteral value: Swift.Int)
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @objc(PBPlaybackMethod) public class PlaybackMethod : PrebidMobile.SingleContainerInt {
+    @objc public static let AutoPlaySoundOn: PrebidMobile.Signals.PlaybackMethod
+    @objc public static let AutoPlaySoundOff: PrebidMobile.Signals.PlaybackMethod
+    @objc public static let ClickToPlay: PrebidMobile.Signals.PlaybackMethod
+    @objc public static let MouseOver: PrebidMobile.Signals.PlaybackMethod
+    @objc public static let EnterSoundOn: PrebidMobile.Signals.PlaybackMethod
+    @objc public static let EnterSoundOff: PrebidMobile.Signals.PlaybackMethod
+    @objc required public init(integerLiteral value: Swift.Int)
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @objc(PBProtocols) public class Protocols : PrebidMobile.SingleContainerInt {
+    @objc public static let VAST_1_0: PrebidMobile.Signals.Protocols
+    @objc public static let VAST_2_0: PrebidMobile.Signals.Protocols
+    @objc public static let VAST_3_0: PrebidMobile.Signals.Protocols
+    @objc public static let VAST_1_0_Wrapper: PrebidMobile.Signals.Protocols
+    @objc public static let VAST_2_0_Wrapper: PrebidMobile.Signals.Protocols
+    @objc public static let VAST_3_0_Wrapper: PrebidMobile.Signals.Protocols
+    @objc public static let VAST_4_0: PrebidMobile.Signals.Protocols
+    @objc public static let VAST_4_0_Wrapper: PrebidMobile.Signals.Protocols
+    @objc public static let DAAST_1_0: PrebidMobile.Signals.Protocols
+    @objc public static let DAAST_1_0_WRAPPER: PrebidMobile.Signals.Protocols
+    @objc required public init(integerLiteral value: Swift.Int)
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @objc(PBStartDelay) public class StartDelay : PrebidMobile.SingleContainerInt {
+    @objc public static let PreRoll: PrebidMobile.Signals.StartDelay
+    @objc public static let GenericMidRoll: PrebidMobile.Signals.StartDelay
+    @objc public static let GenericPostRoll: PrebidMobile.Signals.StartDelay
+    @objc required public init(integerLiteral value: Swift.Int)
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @objc(PBPlacement) public class Placement : PrebidMobile.SingleContainerInt {
+    @objc public static let InStream: PrebidMobile.Signals.Placement
+    @objc public static let InBanner: PrebidMobile.Signals.Placement
+    @objc public static let InArticle: PrebidMobile.Signals.Placement
+    @objc public static let InFeed: PrebidMobile.Signals.Placement
+    @objc public static let Interstitial: PrebidMobile.Signals.Placement
+    @objc public static let Slider: PrebidMobile.Signals.Placement
+    @objc public static let Floating: PrebidMobile.Signals.Placement
+    @objc required public init(integerLiteral value: Swift.Int)
+    @objc deinit
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VideoBaseAdUnit : PrebidMobile.AdUnit {
+  @objc public var parameters: PrebidMobile.VideoBaseAdUnit.Parameters?
+  @_inheritsConvenienceInitializers @objc(PBVideoAdUnitParameters) public class Parameters : ObjectiveC.NSObject {
+    @objc public var api: [PrebidMobile.Signals.Api]?
+    @objc public var maxBitrate: PrebidMobile.SingleContainerInt?
+    @objc public var minBitrate: PrebidMobile.SingleContainerInt?
+    @objc public var maxDuration: PrebidMobile.SingleContainerInt?
+    @objc public var minDuration: PrebidMobile.SingleContainerInt?
+    @objc public var mimes: [Swift.String]?
+    @objc public var playbackMethod: [PrebidMobile.Signals.PlaybackMethod]?
+    @objc public var protocols: [PrebidMobile.Signals.Protocols]?
+    @objc public var startDelay: PrebidMobile.Signals.StartDelay?
+    @objc public var placement: PrebidMobile.Signals.Placement?
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc deinit
+}
+public enum LogLevel : Swift.String {
+  case debug
+  case verbose
+  case info
+  case warn
+  case error
+  case severe
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public enum LogLevel_ : Swift.Int {
+  case debug
+  case verbose
+  case info
+  case warn
+  case error
+  case severe
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class VideoAdUnit : PrebidMobile.VideoBaseAdUnit {
+  @objc public init(configId: Swift.String, size: CoreGraphics.CGSize)
+  @objc public func addAdditionalSize(sizes: [CoreGraphics.CGSize])
+  @objc deinit
+}
+@objc public enum Gender : Swift.Int {
+  case unknown
+  case male
+  case female
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Targeting : ObjectiveC.NSObject {
+  @objc public var storeURL: Swift.String?
+  @objc public var domain: Swift.String?
+  @objc public static let shared: PrebidMobile.Targeting
+  @objc public var gender: PrebidMobile.Gender
+  @objc public var itunesID: Swift.String?
+  @objc public var location: CoreLocation.CLLocation?
+  public var locationPrecision: Swift.Int?
+  @objc public var omidPartnerName: Swift.String?
+  @objc public var omidPartnerVersion: Swift.String?
+  @objc @available(swift, obsoleted: 1.0)
+  public func setLocationPrecision(_ newValue: Foundation.NSNumber?)
+  @objc @available(swift, obsoleted: 1.0)
+  public func getLocationPrecision() -> Foundation.NSNumber?
+  @objc public var yearOfBirth: Swift.Int {
+    @objc get
+  }
+  @objc public func setYearOfBirth(yob: Swift.Int) throws
+  @objc public func clearYearOfBirth()
+  @objc public var subjectToCOPPA: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  public var subjectToGDPR: Swift.Bool? {
+    get
+    set
+  }
+  @objc @available(swift, obsoleted: 1.0)
+  public func setSubjectToGDPR(_ newValue: Foundation.NSNumber?)
+  @objc @available(swift, obsoleted: 1.0)
+  public func getSubjectToGDPR() -> Foundation.NSNumber?
+  @objc public var gdprConsentString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public func storeExternalUserId(_ externalUserId: PrebidMobile.ExternalUserId)
+  @objc public func fetchStoredExternalUserIds() -> [PrebidMobile.ExternalUserId]?
+  @objc public func fetchStoredExternalUserId(_ source: Swift.String) -> PrebidMobile.ExternalUserId?
+  @objc public func removeStoredExternalUserId(_ source: Swift.String)
+  @objc public func removeStoredExternalUserIds()
+  @objc public var purposeConsents: Swift.String? {
+    @objc get
+    @objc set
+  }
+  public func getDeviceAccessConsent() -> Swift.Bool?
+  @objc @available(swift, obsoleted: 1.0)
+  public func getDeviceAccessConsent() -> Foundation.NSNumber?
+  @objc public func addBidderToAccessControlList(_ bidderName: Swift.String)
+  @objc public func removeBidderFromAccessControlList(_ bidderName: Swift.String)
+  @objc public func clearAccessControlList()
+  @objc public func addUserData(key: Swift.String, value: Swift.String)
+  @objc public func updateUserData(key: Swift.String, value: Swift.Set<Swift.String>)
+  @objc public func removeUserData(forKey: Swift.String)
+  @objc public func clearUserData()
+  @objc public func addUserKeyword(_ newElement: Swift.String)
+  @objc public func addUserKeywords(_ newElements: Swift.Set<Swift.String>)
+  @objc public func removeUserKeyword(_ element: Swift.String)
+  @objc public func clearUserKeywords()
+  @objc public func addContextData(key: Swift.String, value: Swift.String)
+  @objc public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
+  @objc public func removeContextData(forKey: Swift.String)
+  @objc public func clearContextData()
+  @objc public func addContextKeyword(_ newElement: Swift.String)
+  @objc public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
+  @objc public func removeContextKeyword(_ element: Swift.String)
+  @objc public func clearContextKeywords()
+  @objc deinit
+}
+@objc public enum IMAAdSlotSize : Swift.Int {
+  case Size400x300
+  case Size640x480
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class IMAUtils : ObjectiveC.NSObject {
+  @objc public static let shared: PrebidMobile.IMAUtils
+  final public func generateInstreamUriForGAM(adUnitID: Swift.String, adSlotSizes: [PrebidMobile.IMAAdSlotSize], customKeywords: [Swift.String : Swift.String]) throws -> Swift.String
+  @objc deinit
+}
+@objc @objcMembers public class ExternalUserId : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc public var source: Swift.String
+  @objc public var identifier: Swift.String
+  @objc public var atype: Foundation.NSNumber?
+  @objc public var ext: [Swift.String : Any]?
+  @objc public init(source: Swift.String, identifier: Swift.String, atype: Foundation.NSNumber? = nil, ext: [Swift.String : Any]? = nil)
+  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc required public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public protocol NativeAdDelegate {
+  @objc func nativeAdLoaded(ad: PrebidMobile.NativeAd)
+  @objc func nativeAdNotFound()
+  @objc func nativeAdNotValid()
+}
+@objc public protocol NativeAdEventDelegate {
+  @objc optional func adDidExpire(ad: PrebidMobile.NativeAd)
+  @objc optional func adWasClicked(ad: PrebidMobile.NativeAd)
+  @objc optional func adDidLogImpression(ad: PrebidMobile.NativeAd)
+}
+@objc public enum PrebidHost : Swift.Int {
+  case Appnexus
+  case Rubicon
+  case Custom
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Prebid : ObjectiveC.NSObject {
+  @objc public static let bidderNameAppNexus: Swift.String
+  @objc public static let bidderNameRubiconProject: Swift.String
+  @objc public var timeoutMillis: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var prebidServerAccountId: Swift.String
+  @objc public var storedAuctionResponse: Swift.String
+  @objc public var pbsDebug: Swift.Bool
+  @objc public var shouldAssignNativeAssetID: Swift.Bool
+  @objc public var shareGeoLocation: Swift.Bool
+  @objc public var prebidServerHost: PrebidMobile.PrebidHost {
+    @objc get
+    @objc set
+  }
+  public var logLevel: PrebidMobile.LogLevel
+  @objc public var externalUserIdArray: [PrebidMobile.ExternalUserId]
+  @objc @available(swift, obsoleted: 1.0)
+  public func setLogLevel(_ logLevel: PrebidMobile.LogLevel_)
+  @objc public static let shared: PrebidMobile.Prebid
+  @objc public func setCustomPrebidServer(url: Swift.String) throws
+  @objc public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
+  @objc public func clearStoredBidResponses()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class BannerAdUnit : PrebidMobile.BannerBaseAdUnit {
+  @objc public init(configId: Swift.String, size: CoreGraphics.CGSize)
+  @objc public func addAdditionalSize(sizes: [CoreGraphics.CGSize])
+  @objc deinit
+}
+@objc public class NativeAsset : ObjectiveC.NSObject {
+  public var required: Swift.Bool
+  public init(isRequired: Swift.Bool)
+  @objc deinit
+}
+@objc @objcMembers public class NativeAssetTitle : PrebidMobile.NativeAsset {
+  @objc public var ext: Swift.AnyObject?
+  @objc required public init(length: ObjectiveC.NSInteger, required: Swift.Bool)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class NativeAssetImage : PrebidMobile.NativeAsset {
+  @objc public var type: PrebidMobile.ImageAsset?
+  public var width: Swift.Int?
+  public var widthMin: Swift.Int?
+  public var height: Swift.Int?
+  public var heightMin: Swift.Int?
+  @objc public var mimes: Swift.Array<Swift.String>?
+  @objc public var ext: Swift.AnyObject?
+  @objc convenience public init(minimumWidth: Swift.Int, minimumHeight: Swift.Int, required: Swift.Bool)
+  @objc override public init(isRequired: Swift.Bool)
+  @objc deinit
+}
+@objc @objcMembers public class NativeAssetData : PrebidMobile.NativeAsset {
+  public var length: Swift.Int?
+  @objc public var ext: Swift.AnyObject?
+  @objc required public init(type: PrebidMobile.DataAsset, required: Swift.Bool)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ImageAsset : PrebidMobile.SingleContainerInt {
+  @objc public static let Icon: PrebidMobile.ImageAsset
+  @objc public static let Main: PrebidMobile.ImageAsset
+  @objc public static let Custom: PrebidMobile.ContextType
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
+}
+@objc public enum DataAsset : Swift.Int {
+  case sponsored = 1
+  case description = 2
+  case rating = 3
+  case likes = 4
+  case downloads = 5
+  case price = 6
+  case saleprice = 7
+  case phone = 8
+  case address = 9
+  case description2 = 10
+  case displayurl = 11
+  case ctatext = 12
+  case Custom
+  public var exchangeID: Swift.Int {
+    get
+    set
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class VideoInterstitialAdUnit : PrebidMobile.VideoBaseAdUnit {
+  @objc public init(configId: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RewardedVideoAdUnit : PrebidMobile.VideoBaseAdUnit {
+  @objc public init(configId: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class NativeAd : ObjectiveC.NSObject {
+  @objc public var title: Swift.String? {
+    get
+  }
+  @objc public var text: Swift.String? {
+    get
+  }
+  @objc public var iconUrl: Swift.String? {
+    get
+  }
+  @objc public var imageUrl: Swift.String? {
+    get
+  }
+  @objc public var callToAction: Swift.String? {
+    get
+  }
+  @objc public var sponsoredBy: Swift.String? {
+    get
+  }
+  @objc weak public var delegate: PrebidMobile.NativeAdEventDelegate?
+  @objc public static func create(cacheId: Swift.String) -> PrebidMobile.NativeAd?
+  @objc deinit
+  @objc @discardableResult
+  public func registerView(view: UIKit.UIView, clickableViews: [UIKit.UIView]?) -> Swift.Bool
+}
+@objc public enum ResultCode : Swift.Int {
+  case prebidDemandFetchSuccess
+  case prebidServerNotSpecified
+  case prebidInvalidAccountId
+  case prebidInvalidConfigId
+  case prebidInvalidSize
+  case prebidNetworkError
+  case prebidServerURLInvalid
+  case prebidServerError
+  case prebidDemandNoBids
+  case prebidDemandTimedOut
+  public func name() -> Swift.String
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class AdUnit : ObjectiveC.NSObject {
+  @objc public var pbAdSlot: Swift.String?
+  @objc dynamic public func fetchDemand(completion: @escaping (_ result: PrebidMobile.ResultCode, _ kvResultDict: [Swift.String : Swift.String]?) -> Swift.Void)
+  @objc dynamic public func fetchDemand(adObject: Swift.AnyObject, completion: @escaping (_ result: PrebidMobile.ResultCode) -> Swift.Void)
+  @objc public func addContextData(key: Swift.String, value: Swift.String)
+  @objc public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
+  @objc public func removeContextData(forKey: Swift.String)
+  @objc public func clearContextData()
+  @objc public func addContextKeyword(_ newElement: Swift.String)
+  @objc public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
+  @objc public func removeContextKeyword(_ element: Swift.String)
+  @objc public func clearContextKeywords()
+  @objc public func setAutoRefreshMillis(time: Swift.Double)
+  @objc public func stopAutoRefresh()
+  @objc deinit
+}
+@objc public class NativeEventTracker : ObjectiveC.NSObject {
+  @objc public init(event: PrebidMobile.EventType, methods: Swift.Array<PrebidMobile.EventTracking>)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class EventType : PrebidMobile.SingleContainerInt {
+  @objc public static let Impression: PrebidMobile.EventType
+  @objc public static let ViewableImpression50: PrebidMobile.EventType
+  @objc public static let ViewableImpression100: PrebidMobile.EventType
+  @objc public static let ViewableVideoImpression50: PrebidMobile.EventType
+  @objc public static let Custom: PrebidMobile.EventType
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class EventTracking : PrebidMobile.SingleContainerInt {
+  @objc public static let Image: PrebidMobile.EventTracking
+  @objc public static let js: PrebidMobile.EventTracking
+  @objc public static let Custom: PrebidMobile.EventTracking
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BannerBaseAdUnit : PrebidMobile.AdUnit {
+  @objc public var parameters: PrebidMobile.BannerBaseAdUnit.Parameters?
+  @_inheritsConvenienceInitializers @objc(PBBannerAdUnitParameters) public class Parameters : ObjectiveC.NSObject {
+    @objc public var api: [PrebidMobile.Signals.Api]?
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class InterstitialAdUnit : PrebidMobile.BannerBaseAdUnit {
+  @objc public init(configId: Swift.String)
+  @objc convenience public init(configId: Swift.String, minWidthPerc: Swift.Int, minHeightPerc: Swift.Int)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class NativeRequest : PrebidMobile.AdUnit {
+  @objc public var context: PrebidMobile.ContextType?
+  @objc public var contextSubType: PrebidMobile.ContextSubType?
+  @objc public var placementType: PrebidMobile.PlacementType?
+  @objc public var placementCount: Swift.Int
+  @objc public var sequence: Swift.Int
+  @objc public var assets: Swift.Array<PrebidMobile.NativeAsset>?
+  @objc public var asseturlsupport: Swift.Int
+  @objc public var durlsupport: Swift.Int
+  @objc public var eventtrackers: Swift.Array<PrebidMobile.NativeEventTracker>?
+  @objc public var privacy: Swift.Int
+  @objc public var ext: Swift.AnyObject?
+  @objc public var configId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public init(configId: Swift.String)
+  @objc convenience public init(configId: Swift.String, assets: Swift.Array<PrebidMobile.NativeAsset>)
+  @objc public func getNativeRequestObject() -> [Swift.AnyHashable : Any]?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ContextType : PrebidMobile.SingleContainerInt {
+  @objc public static let Content: PrebidMobile.ContextType
+  @objc public static let Social: PrebidMobile.ContextType
+  @objc public static let Product: PrebidMobile.ContextType
+  @objc public static let Custom: PrebidMobile.ContextType
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ContextSubType : PrebidMobile.SingleContainerInt {
+  @objc public static let General: PrebidMobile.ContextSubType
+  @objc public static let Article: PrebidMobile.ContextSubType
+  @objc public static let Video: PrebidMobile.ContextSubType
+  @objc public static let Audio: PrebidMobile.ContextSubType
+  @objc public static let Image: PrebidMobile.ContextSubType
+  @objc public static let UserGenerated: PrebidMobile.ContextSubType
+  @objc public static let Social: PrebidMobile.ContextSubType
+  @objc public static let email: PrebidMobile.ContextSubType
+  @objc public static let chatIM: PrebidMobile.ContextSubType
+  @objc public static let SellingProduct: PrebidMobile.ContextSubType
+  @objc public static let AppStore: PrebidMobile.ContextSubType
+  @objc public static let ReviewSite: PrebidMobile.ContextSubType
+  @objc public static let Custom: PrebidMobile.ContextSubType
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PlacementType : PrebidMobile.SingleContainerInt {
+  @objc public static let FeedContent: PrebidMobile.PlacementType
+  @objc public static let AtomicContent: PrebidMobile.PlacementType
+  @objc public static let OutsideContent: PrebidMobile.PlacementType
+  @objc public static let RecommendationWidget: PrebidMobile.PlacementType
+  @objc public static let Custom: PrebidMobile.PlacementType
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class AdViewUtils : ObjectiveC.NSObject {
+  @objc public static func findPrebidCreativeSize(_ adView: UIKit.UIView, success: @escaping (CoreGraphics.CGSize) -> Swift.Void, failure: @escaping (Swift.Error) -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Utils : ObjectiveC.NSObject {
+  @objc public static let shared: PrebidMobile.Utils
+  @objc weak public var delegate: PrebidMobile.NativeAdDelegate?
+  @objc public func convertDictToMoPubKeywords(dict: Swift.Dictionary<Swift.String, Swift.String>) -> Swift.String
+  @objc public func findNative(adObject: Swift.AnyObject)
+  @objc deinit
+}
+extension PrebidMobile.LogLevel : Swift.Equatable {}
+extension PrebidMobile.LogLevel : Swift.Hashable {}
+extension PrebidMobile.LogLevel : Swift.RawRepresentable {}
+extension PrebidMobile.LogLevel_ : Swift.Equatable {}
+extension PrebidMobile.LogLevel_ : Swift.Hashable {}
+extension PrebidMobile.LogLevel_ : Swift.RawRepresentable {}
+extension PrebidMobile.Gender : Swift.Equatable {}
+extension PrebidMobile.Gender : Swift.Hashable {}
+extension PrebidMobile.Gender : Swift.RawRepresentable {}
+extension PrebidMobile.IMAAdSlotSize : Swift.Equatable {}
+extension PrebidMobile.IMAAdSlotSize : Swift.Hashable {}
+extension PrebidMobile.IMAAdSlotSize : Swift.RawRepresentable {}
+extension PrebidMobile.PrebidHost : Swift.Equatable {}
+extension PrebidMobile.PrebidHost : Swift.Hashable {}
+extension PrebidMobile.PrebidHost : Swift.RawRepresentable {}
+extension PrebidMobile.DataAsset : Swift.Equatable {}
+extension PrebidMobile.DataAsset : Swift.Hashable {}
+extension PrebidMobile.DataAsset : Swift.RawRepresentable {}
+extension PrebidMobile.ResultCode : Swift.Equatable {}
+extension PrebidMobile.ResultCode : Swift.Hashable {}
+extension PrebidMobile.ResultCode : Swift.RawRepresentable {}

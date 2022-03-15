@@ -17,6 +17,7 @@ let package = Package(
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
+        .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
         .library(name: "AATKit-AdColony", targets: ["AATKit-AdColony"]),
@@ -25,8 +26,10 @@ let package = Package(
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
+        .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
+        .library(name: "AATKit-OguryAds", targets: ["AATKit-OguryAds"]),
 
         // CMPs
         .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
@@ -36,6 +39,7 @@ let package = Package(
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
                                                    "AATKit-Amazon",
+                                                   "AATKit-FeedAd",
                                                    "AATKit-OguryCMP",
                                                    "AATKit-GoogleCMP",
                                                    "AATKit-Smaato",
@@ -45,7 +49,9 @@ let package = Package(
                                                    "AATKit-InMobi",
                                                    "AATKit-AppNexus",
                                                    "AATKit-MoPub",
+                                                   "AATKit-OguryAds",
                                                    "AATKit-PubNative",
+                                                   "AATKit-Prebid",
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle"
                                                   ]),
@@ -61,7 +67,8 @@ let package = Package(
                                                       "AATKit-InMobi",
                                                       "AATKit-AppNexus",
                                                       "AATKit-MoPub",
-                                                      "AATKit-PubNative"
+                                                      "AATKit-PubNative",
+                                                      "AATKit-Prebid",
                                                      ]),
 
     ],
@@ -114,9 +121,17 @@ let package = Package(
                 dependencies: ["DTBiOSSDK"],
                 path: "./Sources/AmazonSources"),
 
+        .target(name:"AATKit-FeedAd",
+                dependencies: ["FeedAd"],
+                path: "./Sources/FeedAdSources"),
+
         .target(name:"AATKit-OguryCMP",
-                dependencies: ["OguryChoiceManager"],
+                dependencies: ["OguryChoiceManager", "OguryCore"],
                 path: "./Sources/OguryCMPSources"),
+
+        .target(name:"AATKit-OguryAds",
+                dependencies: ["OguryAds", "OguryCore", "OMSDK_Ogury"],
+                path: "./Sources/OguryAdsSources"),
 
         .target(name:"AATKit-GoogleCMP",
                 dependencies: ["UserMessagingPlatform"],
@@ -155,6 +170,10 @@ let package = Package(
                 dependencies: ["HyBid", "OMSDK_Pubnativenet"],
                 path: "./Sources/PubnativeSources"),
 
+        .target(name:"AATKit-Prebid",
+                dependencies: ["Prebid"],
+                path: "./Sources/PrebidSources"),
+
         .target(name:"AATKit-Unity",
                 dependencies: ["UnityAds"],
                 path: "./Sources/UnitySources"),
@@ -178,8 +197,14 @@ let package = Package(
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
 
-        // Ogury CMP
+        // FeedAd
+        .binaryTarget(name: "FeedAd", path: "./Dependencies/FeedAd/FeedAd.xcframework"),
+
+        // Ogury
         .binaryTarget(name: "OguryChoiceManager", path: "./Dependencies/Ogury/OguryChoiceManager.xcframework"),
+        .binaryTarget(name: "OguryCore", path: "./Dependencies/Ogury/OguryCore.xcframework"),
+        .binaryTarget(name: "OguryAds", path: "./Dependencies/Ogury/OguryAds.xcframework"),
+        .binaryTarget(name: "OMSDK_Ogury", path: "./Dependencies/Ogury/OMSDK_Ogury.xcframework"),
 
         // Google CMP
         .binaryTarget(name: "UserMessagingPlatform", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
@@ -217,6 +242,9 @@ let package = Package(
         // PubNative
         .binaryTarget(name: "HyBid", path: "./Dependencies/Pubnative/HyBid.xcframework"),
         .binaryTarget(name: "OMSDK_Pubnativenet", path: "./Dependencies/Pubnative/OMSDK_Pubnativenet.xcframework"),
+
+        // Prebid
+        .binaryTarget(name: "Prebid", path: "./Dependencies/Prebid/Prebid.xcframework"),
 
         // Unity
         .binaryTarget(name: "UnityAds", path: "./Dependencies/Unity/UnityAds.xcframework"),
