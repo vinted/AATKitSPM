@@ -65,6 +65,12 @@ typedef NS_ENUM(NSUInteger, SMAMaxAdContentRating) {
  */
 @property (nonatomic, readonly, nonnull) NSString *publisherId;
 
+
+/**
+ Set this property to YES if you not want the SDK to track app foreground sessions.
+ */
+@property (nonatomic) BOOL disableSessionTracking;
+
 /**
  Creates a configuration object initialized with the specified publisherId.
 

@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/SMAConfiguration.h</key>
 		<data>
-		PK8LHcoflSPUtGmo2UbfReOWkTM=
+		Dj4u9Fn2ODwA2rWnGlx02nxp8LQ=
 		</data>
 		<key>Headers/SMAConsentParser.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w5nj86qcMb7fnczVLQfZON+tPn8=
+		r/i9A2kP4raXUomifH6hnb5vfkI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAdTypes.h</key>
 		<data>
-		a6foSBED2OMTC+q9D2A2Jr0Je5E=
+		2VKyZS5iTz44eorFEV9HbbP8oy4=
 		</data>
 		<key>PrivateHeaders/SMAAdsCache.h</key>
 		<data>
@@ -490,7 +490,7 @@
 		</data>
 		<key>PrivateHeaders/SMAIABDataStorageConstants.h</key>
 		<data>
-		6cJoJqHcb8828Z1hDTx2Ege6Ykw=
+		3vlsTybs53VDAhMLcMvQjgz8PKg=
 		</data>
 		<key>PrivateHeaders/SMAIABDataStorageUserDefaults.h</key>
 		<data>
@@ -698,7 +698,7 @@
 		</data>
 		<key>PrivateHeaders/SMASKAdImpressionTracker.h</key>
 		<data>
-		UQWWDxcfrXBJBiBE6M7IB788ZMA=
+		NJRYZk3+beQHtquz+jO0dXc904w=
 		</data>
 		<key>PrivateHeaders/SMASKAdNetwork.h</key>
 		<data>
@@ -798,7 +798,7 @@
 		</data>
 		<key>PrivateHeaders/SMAVisibilityTracker.h</key>
 		<data>
-		4KZoMw7dwTgW2wvZJ8EnJ8oQ7gw=
+		pM2SXZCIgirhP0cD7JqtE4lhlOA=
 		</data>
 		<key>PrivateHeaders/SMAVisibilityTrackerConfiguration.h</key>
 		<data>
@@ -814,7 +814,7 @@
 		</data>
 		<key>PrivateHeaders/SmaatoSDK+Private.h</key>
 		<data>
-		HlofyTNpXbiY1vboNMtQHT+B3aA=
+		YhXkks7mkQmVO0uL7vfUXa/+vAQ=
 		</data>
 		<key>PrivateHeaders/SmaatoSDK+VisibilityTrackerConfiguration.h</key>
 		<data>
@@ -928,11 +928,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PK8LHcoflSPUtGmo2UbfReOWkTM=
+			Dj4u9Fn2ODwA2rWnGlx02nxp8LQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			d57VDxNacbrJCzlQFlO4BK5z1mZR9nWi+hAv8l6/UtQ=
+			417erOR3oD8XFa/wWco7tKA2rlinfFXaSP7VZAyLtfI=
 			</data>
 		</dict>
 		<key>Headers/SMAConsentParser.h</key>
@@ -1632,11 +1632,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a6foSBED2OMTC+q9D2A2Jr0Je5E=
+			2VKyZS5iTz44eorFEV9HbbP8oy4=
 			</data>
 			<key>hash2</key>
 			<data>
-			MZaw6F6qLE3Sa+oOpDti44JwqGu+vzhJjXTYj9DuyqY=
+			x/MQCqNkdXQsImYITgGrbWTT6rDnjFZeET0ZgZOPhe4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAdsCache.h</key>
@@ -2171,11 +2171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6cJoJqHcb8828Z1hDTx2Ege6Ykw=
+			3vlsTybs53VDAhMLcMvQjgz8PKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			GDpcFKUG09JOHzGyI+s+x7BgdYZoh/WnoQh3wKkFOkY=
+			EvpJUDFbjeKyJGU3UNNBLKz8iJufvI73jKzwyqAxm1k=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAIABDataStorageUserDefaults.h</key>
@@ -2743,11 +2743,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UQWWDxcfrXBJBiBE6M7IB788ZMA=
+			NJRYZk3+beQHtquz+jO0dXc904w=
 			</data>
 			<key>hash2</key>
 			<data>
-			LiModH0vthocJZrdDO/YuZBEr+cEoevFNCl6EsRcBhs=
+			uuv8KVAArGisVeL9S2Deayqy7k69ltY9yNAbbzfT1FI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMASKAdNetwork.h</key>
@@ -3018,11 +3018,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4KZoMw7dwTgW2wvZJ8EnJ8oQ7gw=
+			pM2SXZCIgirhP0cD7JqtE4lhlOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dqXA0NSjmLDLUva3bnq6FWRaAMTQw6qxxZQLWnNs8vg=
+			vgznMcZXM5tGiWEpXBgzRqBQAOe+X/hH3f/1/dg4swk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAVisibilityTrackerConfiguration.h</key>
@@ -3062,11 +3062,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HlofyTNpXbiY1vboNMtQHT+B3aA=
+			YhXkks7mkQmVO0uL7vfUXa/+vAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			zQHCRuRePPzNjBMgl2dVNXgOv01z6Hm5WY0E/lT3KS4=
+			JOC5FL+fdQ1Q1C43oIcRJLwagoTNQIE4RBjlDAgtoEw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SmaatoSDK+VisibilityTrackerConfiguration.h</key>

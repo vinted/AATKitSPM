@@ -14,6 +14,8 @@
 #define APS_ANALYTICS_SAMPLING_LOWER_LIMIT 0
 #define APS_ANALYTICS_SAMPLING_UPPER_LIMIT 100
 #define APS_ANALYTICS_DEFAULT_SAMPLING_RATE 1
+#define APS_ANALYTICS_ADDITIONAL_DETAILS_DICT_LIMIT 20
+#define APS_ANALYTICS_ADDITIONAL_VALUE_SIZE_LIMIT 100
 
 extern NSString *const APS_ANALYTICS_DEFAULT_API_KEY;
 extern NSString *const APS_ANALYTICS_HTTP_URL;
@@ -33,7 +35,11 @@ extern NSString *const APS_ANALYTICS_BETA_HTTP_URL;
 + (void) logEvent:(enum APSEventSeverity)severity eventType:(enum APSEventType)eventType  exception:(NSException *)exception;
 + (void) logEvent:(enum APSEventSeverity)severity eventType:(enum APSEventType)eventType errorDetails:(NSString *)errorDetails;
 
-+ (BOOL)isInitialized;
++ (void) addAdditionalDetails:(NSString *)key value:(NSString *)value;
++ (void) removeAdditionalDetails:(NSString *)key;
++ (NSString *) getAdditionalDetails;
+
++ (BOOL) isInitialized;
 + (BOOL) isSamplingAllowed;
 
 + (NSString *) getAppName;

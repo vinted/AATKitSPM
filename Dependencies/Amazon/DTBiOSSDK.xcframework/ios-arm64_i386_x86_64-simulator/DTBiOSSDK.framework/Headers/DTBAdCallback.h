@@ -7,11 +7,15 @@
 
 #import <Foundation/Foundation.h>
 #import "DTBAdResponse.h"
+#import "DTBAdErrorInfo.h"
 
 @protocol DTBAdCallback
 
-- (void)onFailure:(DTBAdError)error;
-
+@optional
+-(void)onFailure: (DTBAdError)error;
+-(void)onFailure: (DTBAdError)error
+     dtbAdErrorInfo:(DTBAdErrorInfo *) dtbAdErrorInfo;
+@required
 - (void)onSuccess:(DTBAdResponse *)adResponse;
 
 @end

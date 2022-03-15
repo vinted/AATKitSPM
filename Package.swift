@@ -25,6 +25,7 @@ let package = Package(
         .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
+        .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATAdMobMediationAdapter"]),
 
         // CMPs
@@ -45,7 +46,9 @@ let package = Package(
                                                    "AATKit-AppNexus",
                                                    "AATKit-MoPub",
                                                    "AATKit-PubNative",
-                                                   "AATKit-Unity"]),
+                                                   "AATKit-Unity",
+                                                   "AATKit-Vungle"
+                                                  ]),
         // M1 Default dependencies
         .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
                                                       "AATKit-AppLovin",
@@ -138,11 +141,14 @@ let package = Package(
                 dependencies: ["MoPubSDK", "OMSDK_Mopub"],
                 path: "./Sources/MoPubSources"),
         .target(name:"AATKit-PubNative",
-                dependencies: ["Pubnative"],
+                dependencies: ["Pubnative", "OMSDK_Pubnativenet"],
                 path: "./Sources/PubnativeSources"),
         .target(name:"AATKit-Unity",
                 dependencies: ["Unity"],
                 path: "./Sources/UnitySources"),
+        .target(name:"AATKit-Vungle",
+                dependencies: ["Vungle"],
+                path: "./Sources/VungleSources"),
 
         // Mark: Binary Targets
         .binaryTarget(name: "AATKitFramework", path: "./Dependencies/AATKit/AATKit.xcframework"),
@@ -193,9 +199,13 @@ let package = Package(
 
         // PubNative
         .binaryTarget(name: "Pubnative", path: "./Dependencies/Pubnative/HyBid.xcframework"),
+        .binaryTarget(name: "OMSDK_Pubnativenet", path: "./Dependencies/Pubnative/OMSDK_Pubnativenet.xcframework"),
 
         // Unity
         .binaryTarget(name: "Unity", path: "./Dependencies/Unity/UnityAds.xcframework"),
+
+        // Vungle
+        .binaryTarget(name: "Vungle", path: "./Dependencies/Vungle/VungleSDK.xcframework"),
     ]
 )
 

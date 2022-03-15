@@ -9,14 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <AdSupport/AdSupport.h>
 #import "OguryChoiceManagerConstants.h"
-#import "OguryChoiceManagerTCFV1.h"
 #import "OguryChoiceManagerTCFV2.h"
 #import "OguryChoiceManagerExternal.h"
 #import "OguryChoiceManagerConfig.h"
 #import "OguryChoiceManagerCCPAV1.h"
 #import "OGYConstants.h"
-#import "ConsentManager.h"
-#import "ExternalConsentManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,12 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
  @brief Shared instance that has to be used to call all the methods from Ogury Choice Manager
 */
 + (OguryChoiceManager*)sharedManager;
-
-/*!
- @brief Object that has to be used to call methods related to TCF V1
- 
-*/
-@property (nonatomic,strong,readonly) OguryChoiceManagerTCFV1 *tcfV1 __deprecated_msg("tcfV1 is deprecated. Please use tcfV2, for more info check https://docs.ogury.co/");
 
 /*!
  @brief Object that has to be used to call methods related to TCF V2
@@ -53,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 * @param assetKey the Asset Key of your application.
 * @discussion This method must be called before any other Choice Manager method. We recommend to call setup in AppDelgeate class, function didFinishLaunchingWithOptions before starting any UIViewController.
 */
-- (void)setupWithAssetKey:(NSString *)assetKey;
+- (void)setupWithAssetKey:(NSString *)assetKey __deprecated_msg("Use Ogury.shared().start() instead.");
 
 /*!
 * @brief In order to use OguryChoiceManager you have to setup the SDK first
@@ -61,8 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 * @param config an OguryChoiceManagerConfig object, needed to pass versions of frameworks that should be used in SDK.
 * @discussion This method must be called before any other Choice Manager method. We recommend to call setup in AppDelgeate class, function didFinishLaunchingWithOptions before starting any UIViewController.
 */
-
-- (void)setupWithAssetKey:(NSString *)assetKey andConfig:(OguryChoiceManagerConfig *)config;
+- (void)setupWithAssetKey:(NSString *)assetKey andConfig:(OguryChoiceManagerConfig *)config __deprecated_msg("Use Ogury.shared().start() instead. Call OguryChoiceManager.updateConfig() if the provided config is not OguryChoiceManagerConfig.defaultConfiguration().");
 
 /*!
 * @brief Update the current OguryChoiceManagerConfig
@@ -121,7 +111,7 @@ NS_ASSUME_NONNULL_BEGIN
 * @brief To check the current SDK Version
 * @return the current String SDK version
 */
-- (NSString *)consentSDKVersion;
+- (NSString *)consentSDKVersion __deprecated_msg("consentSDKVersion is deprecated. Use Ogury.shared().getSdkVersion() to get the version of the Ogury SDK.");
 
 /*!
 * @brief Give users functionality that restores their purchases in your app, to maintain access to purchased content.

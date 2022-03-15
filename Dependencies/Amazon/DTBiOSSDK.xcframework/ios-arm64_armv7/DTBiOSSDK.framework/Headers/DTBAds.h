@@ -7,6 +7,7 @@
 #import <Foundation/Foundation.h>
 #import "DTBLog.h"
 #import "DTBDebugProperties.h"
+#import "DTBAdNetworkInfo.h"
 
 @class DTBSlotGroup;
 
@@ -69,6 +70,9 @@ typedef enum
 
 // Set the applicationId provided by the Amazon Appstore.
 - (void)setAppKey:(NSString * _Nonnull)appKey;
+
+// Set the Ad Network mediation name and it's info
+- (void) setAdNetworkInfo:(DTBAdNetworkInfo *_Nullable) dtbAdNetworkInfo;
 
 // Retrieves the appKey, if already stored, otherwise will throw an exception
 - (NSString * _Nullable)appKey;

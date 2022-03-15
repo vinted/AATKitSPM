@@ -7,6 +7,7 @@
 #import <Foundation/Foundation.h>
 #import "DTBAdSize.h"
 
+@class DTBAdLoader;
 typedef enum {
     NETWORK_ERROR = 81,
     NETWORK_TIMEOUT,
@@ -27,6 +28,9 @@ typedef enum {
 
 @property (nonatomic) NSArray * _Nullable clickTrackersArray;
 
+@property DTBAdLoader * _Nullable dtbAdLoader;
+
+
 - (void)addDTBPricePoint: (id _Nonnull) pp;
 
 - (NSString * _Nullable)crid;
@@ -44,6 +48,8 @@ typedef enum {
 - (NSDictionary<NSString *, NSString *> * _Nullable)customTargeting;
 
 - (NSString * _Nonnull)keywordsForMopub;
+
+-(DTBAdLoader *_Nullable) getAdLoader;
 
 @end
 

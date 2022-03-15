@@ -33,7 +33,6 @@ typedef NS_ENUM(NSInteger, OguryChoiceManagerAnswer) {
 * @brief A list of posible TCF Versions for setup Choice Manager
 */
 typedef NS_ENUM(NSInteger, OguryChoiceManagerTCFVersion) {
-    OguryChoiceManagerTCFVersion1 __deprecated_enum_msg("tcfV1 is deprecated. Please use tcfV2, for more info check https://docs.ogury.co/")  = 1,
     OguryChoiceManagerTCFVersion2   = 2
 };
 
