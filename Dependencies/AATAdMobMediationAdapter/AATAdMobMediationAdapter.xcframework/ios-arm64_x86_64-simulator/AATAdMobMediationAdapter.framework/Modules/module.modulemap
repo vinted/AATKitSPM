@@ -1,0 +1,6 @@
+framework module AATAdMobMediationAdapter {
+  umbrella header "AATAdMobMediationAdapter.h"
+
+  export *
+  module * { export * }
+}

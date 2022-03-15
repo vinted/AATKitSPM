@@ -15,7 +15,7 @@ FOUNDATION_EXPORT double AATKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char AATKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <M1AATKit/PublicHeader.h>
-#import "AATKit/AATKit.h"
+#import <AATKit/AATKit.h>
 /**
  * Ad Networks
  *
@@ -30,10 +30,12 @@ typedef NS_ENUM(NSInteger, AATKitAdNetwork) {
     AATAdX,
     AATAmazonHB,
     AATApplovin,
+    AATApplovinMax,
     AATAppnexus,
     AATBluestack,
     AATCriteoSDK,
     AATDFP,
+    AATDFPDirect,
     AATFacebook,
     AATFeedAd,
     AATInmobi,
@@ -44,12 +46,16 @@ typedef NS_ENUM(NSInteger, AATKitAdNetwork) {
     AATSmartAd,
     AATSmartAdDirect,
     AATUnity,
+    AATVungle,
     AATYandex,
     AATTeads,
     AATPubNative,
     AATYOC,
     AATUnknownNetwork,
 };
+
+NSString* AATKitAdNetworkGetDescription(AATKitAdNetwork network)
+    NS_SWIFT_NAME(getter:AATKitAdNetwork.description(self:));
 
 typedef NS_ENUM(NSInteger, AATConsent) {
     AATConsentUnknown,
@@ -65,6 +71,33 @@ typedef NS_ENUM(NSInteger, AATManagedConsentState) {
 };
 
 NS_ASSUME_NONNULL_BEGIN
+
+#pragma mark - AdMob Custom Events Adapter Protocols
+
+@protocol AATAdMobCustomEventsInteractionDelegate <NSObject>
+
+- (void)reportImpression;
+- (void)customEventWillPresentModal;
+- (void)customEventWillDismissModal;
+- (void)customEventDidDismissModal;
+- (void)customEventWasClicked;
+
+@end
+
+@protocol AATAdMobCustomEventLoaderDelegate <NSObject>
+
+- (void)customEventLoaderDidFailAd;
+- (void)customEventLoaderDidReceiveAd;
+
+@end
+
+@protocol AATAdMobCustomEventRewardedDelegate <NSObject>
+
+- (void)didStartVideo;
+- (void)didEndVideo;
+- (void)didRewardUserWithReward:(NSString *)name andValue:(NSDecimalNumber *)amount;
+
+@end
 
 /**
  AATKitStatisticsDelegate notify you with all placements reporting events Like: - countAdSpace - countImpression ... etc
@@ -263,6 +296,9 @@ typedef void (^AATBannerCompletionHandler) (UIView* __nullable bannerView, NSErr
 /// @see +[AATKit createBannerPlacementWithName:]
 /// @see +[AATKit createBannerPlacementWithName:configuration:]
 @protocol AATBannerPlacementProtocol
+
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventsInteractionDelegate> *adMobCustomEventsInteractionDelegate;
 
 /// Execute an Ad Request
 ///
@@ -713,6 +749,14 @@ NS_ASSUME_NONNULL_END
 @protocol AATKitPlacement <NSObject>
 @property (copy) NSString * _Nonnull name;
 
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventsInteractionDelegate> *adMobCustomEventsInteractionDelegate;
+
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventLoaderDelegate> *adMobCustomEventsLoaderDelegate;
+
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventRewardedDelegate> *adMobCustomEventsRewardedDelegate;
 /// Update the placement statistics delegate
 ///
 /// Should be called when you need to change the statistics events listener
@@ -1046,6 +1090,12 @@ typedef NS_ENUM(NSInteger, AdChoicesIconPosition) {
  */
 // FIXME: Provide some example snippets for the different kinds of ads.
 @interface AATKit : NSObject
+
+/// @name Initialization
+
+/// Check if AATKit is already initialized
+///
++ (BOOL)isSDKInitialized;
 
 /// @name Initialization and Configuration
 

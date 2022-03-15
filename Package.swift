@@ -25,6 +25,7 @@ let package = Package(
         .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
+        .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATAdMobMediationAdapter"]),
 
         // CMPs
         .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
@@ -59,6 +60,7 @@ let package = Package(
                                                       "AATKit-MoPub",
                                                       "AATKit-PubNative"
                                                      ]),
+
     ],
     dependencies: [
         // AdNetworks supporting SPM
@@ -67,12 +69,23 @@ let package = Package(
         .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("10.3.7"))
     ],
     targets: [
+        // AATKit target
         .target(name:"AATKit-Core",
                 dependencies: ["AATKitFramework"],
                 path: "./Sources/AATKit"),
+        
+        // AATKit M1 target
         .target(name:"AATKit-M1-Core",
                 dependencies: ["AATKitFramework-M1"],
                 path: "./Sources/AATKit-M1"),
+
+        // AATAdMobMediationAdapter target
+        .target(name:"AATAdMobMediationAdapter",
+                dependencies: [ "AATKit-GoogleMobileAds",
+                                "AATDependencyHelper",
+                                "AATKitFramework"
+                              ],
+                path: "./Sources/AATAdMobMediationAdapter"),
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
