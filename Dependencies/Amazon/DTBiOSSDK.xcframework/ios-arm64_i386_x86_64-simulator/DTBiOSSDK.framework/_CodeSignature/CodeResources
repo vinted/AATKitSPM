@@ -6,23 +6,23 @@
 	<dict>
 		<key>DTBAdInterstitialViewController.nib/objects-11.0+.nib</key>
 		<data>
-		JoVyxzdb0Kcslev66LrYoaOy6M4=
+		4etmxALWADwVLRSzNxCgxlPEsSU=
 		</data>
 		<key>DTBAdInterstitialViewController.nib/runtime.nib</key>
 		<data>
-		Mf62CP9080924rR5yEFoemJLj1g=
+		rqakqnyKfS7I+B4XdCSBjsNFwMw=
 		</data>
 		<key>DTBTwoPartExpandedViewController.nib/objects-11.0+.nib</key>
 		<data>
-		EiXQbV9VtNk1pR6UUxi0LYFewMU=
+		+CrWz9flVZqlnw8H2bs+uxJnV3s=
 		</data>
 		<key>DTBTwoPartExpandedViewController.nib/runtime.nib</key>
 		<data>
-		+ugO7jz57RyTmBw2zxm4Cdr681c=
+		tellJKz76uYBleGST19rQqeRAhM=
 		</data>
 		<key>Headers/APSAnalyticsLib.h</key>
 		<data>
-		/h5c6cZDQ21304C9xWpNFEu5a4g=
+		WNc4QpVaz4C0WLSzFwt+0qZpA/0=
 		</data>
 		<key>Headers/APSCacheData.h</key>
 		<data>
@@ -42,11 +42,15 @@
 		</data>
 		<key>Headers/DTBAdCallback.h</key>
 		<data>
-		du6+Rng+V/VpuT50qQewtML5Mjw=
+		HNRrZsRzms7ek+y72gb0gLsEqTc=
 		</data>
 		<key>Headers/DTBAdDispatcher.h</key>
 		<data>
 		sVJWCC8PHQ9Ju/JdlbTjMe7pidE=
+		</data>
+		<key>Headers/DTBAdErrorInfo.h</key>
+		<data>
+		4pIaYMNTWovpXp6XXT+lJWf7YOc=
 		</data>
 		<key>Headers/DTBAdHelper.h</key>
 		<data>
@@ -64,13 +68,17 @@
 		<data>
 		xZ1ZVYda1n6pjSIf0IDAbJwNAo4=
 		</data>
+		<key>Headers/DTBAdNetworkInfo.h</key>
+		<data>
+		8AwKCHV2r8zXLZJrg0OkRlIj72c=
+		</data>
 		<key>Headers/DTBAdResponse+Mediation.h</key>
 		<data>
 		rmh79bXfL7hJUYxp/f4qHh0QuMw=
 		</data>
 		<key>Headers/DTBAdResponse.h</key>
 		<data>
-		VsBrqhIXx0AliYVDITfNxHWioHY=
+		/bR6uIFKdVbBpulJ3cm+PjhK/Aw=
 		</data>
 		<key>Headers/DTBAdSize.h</key>
 		<data>
@@ -82,7 +90,7 @@
 		</data>
 		<key>Headers/DTBAds.h</key>
 		<data>
-		IYiDTuG0/zeQM7szoqiEZlZasSY=
+		njnWOga5Xsppsm0V2y4Hu19P5YU=
 		</data>
 		<key>Headers/DTBDebugProperties.h</key>
 		<data>
@@ -134,7 +142,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pCu8ZEWUv1WVC4+DLhVn6sLXDew=
+		YljnkbS5lvuczfAPZi5nYV6qW8g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -171,55 +179,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JoVyxzdb0Kcslev66LrYoaOy6M4=
+			4etmxALWADwVLRSzNxCgxlPEsSU=
 			</data>
 			<key>hash2</key>
 			<data>
-			kUyPJ6yNFhONh000U876dRZGJIigm5YneOmqS768lS8=
+			0N9s+qs/9GZeVCvKHjFXFqBIvrKPr90LMOBP3gZXoGc=
 			</data>
 		</dict>
 		<key>DTBAdInterstitialViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mf62CP9080924rR5yEFoemJLj1g=
+			rqakqnyKfS7I+B4XdCSBjsNFwMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			JYV1ZQqe8NJ7RREVmzKeMelTn4l0UF3WTlXL3TKwMks=
+			j+bXQdJQh4I8Vx+FeHHW+Dyt1Q8OgNF04kjdkO3f8Uw=
 			</data>
 		</dict>
 		<key>DTBTwoPartExpandedViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EiXQbV9VtNk1pR6UUxi0LYFewMU=
+			+CrWz9flVZqlnw8H2bs+uxJnV3s=
 			</data>
 			<key>hash2</key>
 			<data>
-			J2aCeL2MgpgEbQIV9yVD0/8PGD7lMqwU8u+A+KIKc0Q=
+			x14WDDGO8uVxCy6mb5ORfBfY2/bti2tMRkLaaTp5Fa0=
 			</data>
 		</dict>
 		<key>DTBTwoPartExpandedViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ugO7jz57RyTmBw2zxm4Cdr681c=
+			tellJKz76uYBleGST19rQqeRAhM=
 			</data>
 			<key>hash2</key>
 			<data>
-			eKC8Zo0FHV+c+isvg4YWHtPGZxPyfHHvHHMEBGF1WXw=
+			vuqzrTOMFdnQnhaMFPf56uKdaXHSCZ+zSK/nU51gviU=
 			</data>
 		</dict>
 		<key>Headers/APSAnalyticsLib.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/h5c6cZDQ21304C9xWpNFEu5a4g=
+			WNc4QpVaz4C0WLSzFwt+0qZpA/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LWcTDKXXcuEx7ZhxzmNnpOsmJMOsYTXP2h7kZcfJu4Y=
+			cU0Jn/a6DQD0d8794733/8nD1h2UyG1YV1X3QlOgx9A=
 			</data>
 		</dict>
 		<key>Headers/APSCacheData.h</key>
@@ -270,11 +278,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			du6+Rng+V/VpuT50qQewtML5Mjw=
+			HNRrZsRzms7ek+y72gb0gLsEqTc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7U3Q94E/mgf8cl8s9ls1MoXSftyFElJk6mtLgYrrE8Q=
+			rYrzgGcasiPaoUZvggOOM2l8F9u32yPGSr6BqQfEf7Q=
 			</data>
 		</dict>
 		<key>Headers/DTBAdDispatcher.h</key>
@@ -286,6 +294,17 @@
 			<key>hash2</key>
 			<data>
 			nx11ajKaK2JCpAvq/6Ssbgw7zD1qzxI48p8bwEXcpn4=
+			</data>
+		</dict>
+		<key>Headers/DTBAdErrorInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4pIaYMNTWovpXp6XXT+lJWf7YOc=
+			</data>
+			<key>hash2</key>
+			<data>
+			W028DOK/kfc+UKS0Rlz4H2tkl0bo2CCo6gjJ6NmU/Oo=
 			</data>
 		</dict>
 		<key>Headers/DTBAdHelper.h</key>
@@ -332,6 +351,17 @@
 			wqLQXhsfdD2t3wiGE/uSPtVsLG1d0Y3G0tyPsv6hLtM=
 			</data>
 		</dict>
+		<key>Headers/DTBAdNetworkInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8AwKCHV2r8zXLZJrg0OkRlIj72c=
+			</data>
+			<key>hash2</key>
+			<data>
+			C3f2lzXtZCp3fvlkbeF2c0r+ga0fwIXrV7aCHM/BpmU=
+			</data>
+		</dict>
 		<key>Headers/DTBAdResponse+Mediation.h</key>
 		<dict>
 			<key>hash</key>
@@ -347,11 +377,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VsBrqhIXx0AliYVDITfNxHWioHY=
+			/bR6uIFKdVbBpulJ3cm+PjhK/Aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlJ8IW56ISLPHxihc8O2CJejk8gxqh+WhLXQaAF7h0M=
+			qZLqYISZ5tCX/C1jIkxk0jgPor/mNoeDhgjeRoGviI8=
 			</data>
 		</dict>
 		<key>Headers/DTBAdSize.h</key>
@@ -380,11 +410,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IYiDTuG0/zeQM7szoqiEZlZasSY=
+			njnWOga5Xsppsm0V2y4Hu19P5YU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ns0vt1mitfSVTeGeFyHM0ha+ZSK77RilIzVC2QOyNxs=
+			KCiwo+UYFbGsWA0EW9vhtpGsQo1BxrdR35GuJ4Vch90=
 			</data>
 		</dict>
 		<key>Headers/DTBDebugProperties.h</key>
