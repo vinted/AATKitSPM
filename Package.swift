@@ -10,7 +10,7 @@ let package = Package(
     products: [
 
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
-        .library(name: "AATKit-M1-Core", targets: ["AATKit-M1-Core"]),
+//        .library(name: "AATKit-M1-Core", targets: ["AATKit-M1-Core"]),
         .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATKit-AATAdMobMediationAdapter"]),
 
         // Dependencies
@@ -56,20 +56,20 @@ let package = Package(
                                                    "AATKit-Vungle"
                                                   ]),
         // M1 Default dependencies
-        .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
-                                                      "AATKit-AppLovin",
-                                                      "AATKit-Amazon",
-                                                      "AATKit-OguryCMP",
-                                                      "AATKit-GoogleCMP",
-                                                      "AATKit-Smaato",
-                                                      "AATKit-SmartAd",
-                                                      "AATKit-AdColony",
-                                                      "AATKit-InMobi",
-                                                      "AATKit-AppNexus",
-                                                      "AATKit-MoPub",
-                                                      "AATKit-PubNative",
-                                                      "AATKit-Prebid",
-                                                     ]),
+//        .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
+//                                                      "AATKit-AppLovin",
+//                                                      "AATKit-Amazon",
+//                                                      "AATKit-OguryCMP",
+//                                                      "AATKit-GoogleCMP",
+//                                                      "AATKit-Smaato",
+//                                                      "AATKit-SmartAd",
+//                                                      "AATKit-AdColony",
+//                                                      "AATKit-InMobi",
+//                                                      "AATKit-AppNexus",
+//                                                      "AATKit-MoPub",
+//                                                      "AATKit-PubNative",
+//                                                      "AATKit-Prebid",
+//                                                     ]),
 
     ],
     dependencies: [
